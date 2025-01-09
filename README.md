@@ -5,5 +5,6 @@
 - Git
 - Visual Studio Code
 - ESP-IDF tools
+- PuTTY
 
 download required tools from web. 
