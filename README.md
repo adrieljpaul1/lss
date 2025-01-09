@@ -7,6 +7,7 @@
 - Visual Studio Code
 - ESP-IDF tools
 - PuTTY
+- [Espressif Docs-get started] (https://docs.espressif.com/projects/esp-idf/en/stable/esp32/get-started/windows-setup.html#get-started-windows-first-steps)
 
 Download required tools from web. 
 #### References
