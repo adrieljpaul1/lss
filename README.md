@@ -1,15 +1,20 @@
 ### Welcome Adriel
 #### ESP-IDF
-- CMake
-- Ninja
-- Python (3.6 or higher)
-- Git
-- Visual Studio Code
-- ESP-IDF tools
-- PuTTY
-- [Espressif Docs-get started] (https://docs.espressif.com/projects/esp-idf/en/stable/esp32/get-started/windows-setup.html#get-started-windows-first-steps)
-
-Download required tools from web. 
+- CMake -- I C:\Program Files\Cmake
+- Ninja -- Z C:\Program Files\Ninja
+- Python (3.6 or higher) -- I
+- Git -- I
+- Visual Studio Code -- I
+- ESP-IDF tools -- I
+- PuTTY -- I
+Z = .zip file
+I = .msi, .exe
+#### DOCS
+- Espressif Docs-get started
+1. https://docs.espressif.com/projects/esp-idf/en/stable/esp32/get-started/windows-setup.html#get-started-windows-first-steps
+- Challenge
+2. https://community.element14.com/challenges-projects/element14-presents/project-videos/w/documents/28339/episode-623-how-to-run-linux-on-an-esp32#:~:text=Can%20you%20run%20Linux%20on,)%2C%20one%20specific%20variant%20can.
+ 
 #### References
 - Claude
 - ChatGPT
