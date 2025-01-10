@@ -48,5 +48,5 @@
 2. Arduino C++
 3. Blender
 4. WiFi/MQTT
-//ignore this please, this is for checking branch and commits
+please help me!
 <!end>
