@@ -20,4 +20,5 @@ I = .msi, .exe
 - ChatGPT
 - https://www.youtube.com/watch?v=5IuZ-E8Tmhg&t=30s setup
 - https://www.youtube.com/watch?v=tc3Qnf79Ny8 setup
+- https://github.com/
 - https://www.youtube.com/watch?v=57QXTUFnrcE startup
