@@ -19,9 +19,9 @@ int valve4Pin = 27;
 
 // Moisture sensor pins
 int sensor1Pin = 34;  
-//int sensor2Pin = 35;  
-//int sensor3Pin = 32;  
-//int sensor4Pin = 33;  
+int sensor2Pin = 35;  
+int sensor3Pin = 32;  
+int sensor4Pin = 33;  
 
 // MQTT topic names
 const char* moistureTopic = "sector 2";
