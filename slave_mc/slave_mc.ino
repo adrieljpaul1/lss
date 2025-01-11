@@ -11,11 +11,8 @@ const char* mqtt_server = "5.196.78.28";
 WiFiClient espClient;
 PubSubClient client(espClient);
 
-// Pin assignments for solenoid valves
-int valve1Pin = 13;  
-int valve2Pin = 12;  
-int valve3Pin = 14;  
-int valve4Pin = 27;  
+// Pin assignments for one (360 sprklr) solenoid valve
+int valvePin = 13;  
 
 // Moisture sensor pins
 int sensor1Pin = 34;  
@@ -95,17 +92,11 @@ void setup() {
     pinMode(sensor4Pin, INPUT);
 
     // Set up solenoid valve control pins as OUTPUT
-    pinMode(valve1Pin, OUTPUT);
-    pinMode(valve2Pin, OUTPUT);
-    pinMode(valve3Pin, OUTPUT);
-    pinMode(valve4Pin, OUTPUT);
-
+    pinMode(valvePin, OUTPUT);
+    
     // Initially turn off all valves
-    digitalWrite(valve1Pin, LOW);
-    digitalWrite(valve2Pin, LOW);
-    digitalWrite(valve3Pin, LOW);
-    digitalWrite(valve4Pin, LOW);
-
+    digitalWrite(valvePin, LOW);
+    
     // Connect to Wi-Fi first
     connectToWiFi();
 
@@ -149,5 +140,5 @@ void loop() {
                      "sensor 4 :" + String(moistureValues[3])  ;
     client.publish(moistureTopic, payload.c_str());
 
-    delay(1000);  // Check every minute
+    delay(1000);  // Check every second for burning the esp32
 }
