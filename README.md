@@ -1,4 +1,12 @@
 ### Welcome Adriel
+**LINK :**  <code><https://github.com/adrieljpaul1/test></code>  
+
+**MQTT BROKER IP :** <code>5.196.78.28</code>  
+
+
+**RECOMMENDED ESP32 BAUDRATE :** <code>115200</code>   
+
+**MAXIMUM ESP32 BAUDRATE :** <code>921600</code>  
 #### ESP-IDF
 - CMake -- I C:\Program Files\Cmake
 - Ninja -- Z C:\Program Files\Ninja
