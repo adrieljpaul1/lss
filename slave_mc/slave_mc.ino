@@ -4,7 +4,7 @@
 // Wi-Fi credentials
 const char* ssid = "Main Server";
 const char* password = "admin@123";
-
+int percentavg;
 // MQTT broker details
 const char* mqtt_server = "5.196.78.28";  
 
@@ -13,6 +13,10 @@ PubSubClient client(espClient);
 
 // Pin assignments for one (360 sprklr) solenoid valve
 int valvePin = 13;  
+int avgarr(int arr[]){
+  Serial.println("calculating avg\n");
+  for(int i = 0;i < 4;i++){
+  }
 
 // Moisture sensor pins
 int sensor1Pin = 34;  
@@ -141,4 +145,5 @@ void loop() {
     client.publish(moistureTopic, payload.c_str());
 
     delay(1000);  // Check every second for burning the esp32
+    
 }
