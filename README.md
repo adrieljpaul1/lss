@@ -2,7 +2,9 @@
 **LINK :**  <code><https://github.com/adrieljpaul1/test></code>  
 
 **MQTT BROKER IP :** <code>5.196.78.28</code>  
-
+**CODES**
+- C : Claude-generated Code
+- E : ESP-IDF API
 
 **RECOMMENDED ESP32 BAUDRATE :** <code>115200</code>   
 
