@@ -1,4 +1,18 @@
-green - D13 - GPIO13 - 13
-yellow - D12 - GPIO12 - 12
-orange - D14 - GPIO14 - 14
-red - D27 - GPIO27 - 27
+## for non-wifi needs
+
+green - D13 - GPIO 13 - 13 - ADC2_4
+yellow - D12 - GPIO 12 - 12 - ADC2_5
+orange - D14 - GPIO 14 - 14 - ADC2_6
+red - D27 - GPIO 27 - 27 - ADC2_7
+
+## for wifi needs
+
+1 -- ADC1_CHANNEL_0 (GPIO 36) - VP - GPIO 36
+2 -- ADC1_CHANNEL_3 (GPIO 39) - VN - GPIO 39
+3 -- ADC1_CHANNEL_6 (GPIO 34) - D34 - GPIO 34
+4 -- ADC1_CHANNEL_7 (GPIO 35) - D35 - GPIO 35
+
+adc1_get_raw(channel); gives you raw value- for moisture sensor, it gives 4095 as driest and 0 as wettest.
+
+***CHECK FOR ANY SYNTAX ERRORS BEFORE BUILDING***
+
