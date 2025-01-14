@@ -1,0 +1,4 @@
+green - D13 - GPIO13 - 13
+yellow - D12 - GPIO12 - 12
+orange - D14 - GPIO14 - 14
+red - D27 - GPIO27 - 27
