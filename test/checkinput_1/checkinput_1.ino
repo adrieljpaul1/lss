@@ -4,6 +4,9 @@ const int pin[4] = {32,33,34,35};
 void setup(){
   Serial.begin(115200);
   Serial.println("DEBUG");
+  for(int i = 0; i< 4;i++){
+    pinMode(pin[i],INPUT);
+  }
 }
 void loop(){
   Serial.println();
