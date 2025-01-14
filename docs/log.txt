@@ -13,3 +13,5 @@ red - D27 - GPIO 27 - 27 - ADC2_7
 4 -- ADC1_CHANNEL_7 (GPIO 35) - D35 - GPIO 35
 
 adc1_get_raw(channel); gives you raw value- for moisture sensor, it gives 4095 as driest and 0 as wettest.
+
+***CHECK FOR ANY SYNTAX ERRORS BEFORE BUILDING***
