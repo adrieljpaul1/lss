@@ -53,13 +53,10 @@ void app_main(void){
    for(int i = 0;i<4;i++){
     avg += rawval[i];
    }
-   //printf("%d",avg);
    avg = avg/4;
-   //printf("");
-   //printf("%d\n",rawval);
-
+   
    for(int  i = 0;i<4;i++){
-    printf("%d\n",*(rawval+i));
+    printf("%f\n",*(rawval+i));
    }
    printf("Average = %f",avg);
    
