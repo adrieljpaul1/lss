@@ -37,27 +37,41 @@ for reference:
 */
 //Definitions
 
-int rawval[4];
+int val[4];
+//int perval[4]; you dont need this
 int avg = 0;
+QueueHandle_t taskQueue = NULL;
+
 //function to get raw sensor data and record it in an array
+float convPercent(int argument){
+  /*
+    if (raw_value > 4095) raw_value = 4095;
+    if (raw_value < 0) raw_value = 0;
+    */
+   //keeping the raw values in bound
+  argument = argument > 4095 ? 4095 : argument;
+  argument = argument < 0 ? 0 : argument;  
+  float percent = ((float)(4095 - argument) / 4095.0f) * 100.0f;
+  return percent;
+}
 void readVal(){
   while(1){
     /*for reference : 
-      int rawval = adc1_get_raw(ADC1_CHANNEL_0);
+      int %d = adc1_get_raw(ADC1_CHANNEL_0);
     */
-   *rawval = adc1_get_raw(ADC1_CHANNEL_0); // VP -- color = green
-   *(rawval + 1) = adc1_get_raw(ADC1_CHANNEL_3); // VN - color = yellow
-   *(rawval + 2) = adc1_get_raw(ADC1_CHANNEL_6); // D34 -- color = orange
-   *(rawval + 3) = adc1_get_raw(ADC1_CHANNEL_7); // D35 -- color = red
+   *val = adc1_get_raw(ADC1_CHANNEL_0); // VP -- color = green
+   *(val + 1) = adc1_get_raw(ADC1_CHANNEL_3); // VN - color = yellow
+   *(val + 2) = adc1_get_raw(ADC1_CHANNEL_6); // D34 -- color = orange
+   *(val + 3) = adc1_get_raw(ADC1_CHANNEL_7); // D35 -- color = red
    
   }
   printf("\n===\n");
+  
   vTaskDelay(1000/portTICK_PERIOD_MS);
   }
 }
 
+
 void app_main(void){
- 
- 
   configure_adc(); 
 }
