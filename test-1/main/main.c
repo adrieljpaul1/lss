@@ -32,16 +32,15 @@ void configure_adc() {
 for reference:
    int read_soil_moisture() {
     return adc1_get_raw(ADC1_CHANNEL_0); // Read raw ADC value
+  // configuregpio(13, GPIO_MODE_INPUT, GPIO_PULLUP_ENABLE,GPIO_PULLDOWN_DISABLE);
   }
 */
+//Definitions
 
-void app_main(void){
- //commented because im using the analog output AO in soilmoisture sensor
- // configuregpio(13, GPIO_MODE_INPUT, GPIO_PULLUP_ENABLE,GPIO_PULLDOWN_DISABLE);
-  configure_adc();
-  float rawval[4];
-  float avg = 0;
-  printf("init finished, going to read sensor!\n");
+int rawval[4];
+int avg = 0;
+//function to get raw sensor data and record it in an array
+void readVal(){
   while(1){
     /*for reference : 
       int rawval = adc1_get_raw(ADC1_CHANNEL_0);
@@ -50,17 +49,15 @@ void app_main(void){
    *(rawval + 1) = adc1_get_raw(ADC1_CHANNEL_3); // VN - color = yellow
    *(rawval + 2) = adc1_get_raw(ADC1_CHANNEL_6); // D34 -- color = orange
    *(rawval + 3) = adc1_get_raw(ADC1_CHANNEL_7); // D35 -- color = red
-   for(int i = 0;i<4;i++){
-    avg += rawval[i];
-   }
-   avg = (avg/4);
    
-   for(int  i = 0;i<4;i++){
-    printf("%f\n",*(rawval+i));
-   }
-   printf("Average = %f",avg);
-   
-   printf("\n===\n");
-    vTaskDelay(1000/portTICK_PERIOD_MS);
   }
+  printf("\n===\n");
+  vTaskDelay(1000/portTICK_PERIOD_MS);
+  }
+}
+
+void app_main(void){
+ 
+ 
+  configure_adc(); 
 }
