@@ -1,52 +1,33 @@
-### LSS Github.
-    
-
+### Welcome Adriel
 **LINK :**  <code><https://github.com/adrieljpaul1/test></code>  
 
 **MQTT BROKER IP :** <code>5.196.78.28</code>  
-
+**CODES**
+- C : Claude-generated Code
+- E : ESP-IDF API
 
 **RECOMMENDED ESP32 BAUDRATE :** <code>115200</code>   
 
 **MAXIMUM ESP32 BAUDRATE :** <code>921600</code>  
-
-### Contributors:
-#### 1. Casendraa, **Alice** 
-1. **HR** Manager
-2. LOGISTICS
-3. History Whiz
-##### Skillset :
-1. C
-2. Linux Basics
-3. Arduino C++
-4. Diplomacy
-5. Management
-#### 2. Thomas, **Dewin**
-1. **Design** Engineer
-2. DESIGN
-3. Human Debugger
-##### Skillset : 
-1. Python/Julia
-2. C++
-3. Arduino C++
-4. Blender
-#### 3. R Kumar, **Jovita**
-1. LOGISTICS
-2. Management
-##### Skillset : 
-1. Hindi
-2. Diplomacy
-3. C
-4. Linux Basics
-5. Arduino C++
-#### 4. Sam, **Matthew**
-1. Contributor
-2. Backend
-3. Hardware
-##### Skillset : 
-1. JavaScript/Python
-2. Arduino C++
-3. Blender
-4. WiFi/MQTT
-please help me!
-<!end>
+#### ESP-IDF
+- CMake -- I C:\Program Files\Cmake
+- Ninja -- Z C:\Program Files\Ninja
+- Python (3.6 or higher) -- I
+- Git -- I
+- Visual Studio Code -- I
+- ESP-IDF tools -- I
+- PuTTY -- I  
+Z = .zip file
+I = .msi, .exe
+#### DOCS
+- Espressif Docs-get started
+1. https://docs.espressif.com/projects/esp-idf/en/stable/esp32/get-started/windows-setup.html#get-started-windows-first-steps
+- Challenge
+2. https://community.element14.com/challenges-projects/element14-presents/project-videos/w/documents/28339/episode-623-how-to-run-linux-on-an-esp32#:~:text=Can%20you%20run%20Linux%20on,)%2C%20one%20specific%20variant%20can.
+ 
+#### References
+- Claude
+- ChatGPT
+- https://www.youtube.com/watch?v=5IuZ-E8Tmhg&t=30s setup
+- https://www.youtube.com/watch?v=tc3Qnf79Ny8 setup
+- https://www.youtube.com/watch?v=57QXTUFnrcE startup
