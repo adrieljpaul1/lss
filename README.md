@@ -16,7 +16,7 @@
 - Git -- I
 - Visual Studio Code -- I
 - ESP-IDF tools -- I
-- PuTTY -- I
+- PuTTY -- I  
 Z = .zip file
 I = .msi, .exe
 #### DOCS
