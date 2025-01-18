@@ -1,0 +1,655 @@
+Command: C:\Users\1013\.espressif\python_env\idf5.5_py3.10_env\Scripts\python.exe C:\Users\1013\esp-idf\tools/idf_monitor.py -p COM7 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 C:\Users\1013\lss\src\idf\lss\build\lss.elf C:\Users\1013\lss\src\idf\lss\build\bootloader\bootloader.elf --force-color -m 'C:\Users\1013\.espressif\python_env\idf5.5_py3.10_env\Scripts\python.exe' 'C:\Users\1013\esp-idf\tools\idf.py'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6328
+load:0x40078000,len:15828
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (27) boot: ESP-IDF v5.5-dev-1428-g0f0068fff3 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Jan 18 2025 13:19:13[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v3.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (80) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1e754h (124756) map[0m
+[0;32mI (130) esp_image: segment 1: paddr=0002e77c vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (131) esp_image: segment 2: paddr=0002e7a0 vaddr=3ffb0000 size=01878h (  6264) load[0m
+[0;32mI (137) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=9e428h (648232) map[0m
+[0;32mI (363) esp_image: segment 4: paddr=000ce450 vaddr=3ffb1878 size=026e0h (  9952) load[0m
+[0;32mI (367) esp_image: segment 5: paddr=000d0b38 vaddr=40080000 size=17a44h ( 96836) load[0m
+[0;32mI (417) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (417) boot: Disabling RNG early entropy source...[0m
+[0;32mI (427) cpu_start: Multicore app[0m
+[0;32mI (435) cpu_start: Pro cpu start user code[0m
+[0;32mI (436) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (436) app_init: Application information:[0m
+[0;32mI (436) app_init: Project name:     lss[0m
+[0;32mI (439) app_init: App version:      475a186-dirty[0m
+[0;32mI (444) app_init: Compile time:     Jan 18 2025 13:18:39[0m
+[0;32mI (449) app_init: ELF file SHA256:  57c10f564...[0m
+[0;32mI (453) app_init: ESP-IDF:          v5.5-dev-1428-g0f0068fff3[0m
+[0;32mI (458) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (462) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (466) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (470) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (477) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (482) heap_init: At 3FFB8808 len 000277F8 (157 KiB): DRAM[0m
+[0;32mI (487) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (492) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (498) heap_init: At 40097A44 len 000085BC (33 KiB): IRAM[0m
+[0;32mI (504) spi_flash: detected chip: generic[0m
+[0;32mI (507) spi_flash: flash io: dio[0m
+[0;33mW (510) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (523) main_task: Started on CPU0[0m
+[0;32mI (533) main_task: Calling app_main()[0m
+[0;32mI (553) gpio: GPIO[4]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (563) wifi:wifi driver task: 3ffc092c, prio:23, stack:6656, core=0[0m
+[0;32mI (573) wifi:wifi firmware version: d2a0351b38[0m
+[0;32mI (573) wifi:wifi certification version: v7.0[0m
+[0;32mI (573) wifi:config NVS flash: enabled[0m
+[0;32mI (573) wifi:config nano formatting: disabled[0m
+[0;32mI (573) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (583) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (583) wifi:Init management short buffer num: 32[0m
+[0;32mI (593) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (593) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (603) wifi:Init static rx buffer num: 10[0m
+[0;32mI (603) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (613) wifi_init: rx ba win: 6[0m
+[0;32mI (613) wifi_init: accept mbox: 6[0m
+[0;32mI (613) wifi_init: tcpip mbox: 32[0m
+[0;32mI (613) wifi_init: udp mbox: 6[0m
+[0;32mI (623) wifi_init: tcp mbox: 6[0m
+[0;32mI (623) wifi_init: tcp tx win: 5760[0m
+[0;32mI (623) wifi_init: tcp rx win: 5760[0m
+[0;32mI (623) wifi_init: tcp mss: 1440[0m
+[0;32mI (633) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (633) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (643) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (723) wifi:mode : sta (08:a6:f7:46:c3:b4)[0m
+[0;32mI (733) wifi:enable tsf[0m
+[0;32mI (733) WiFi System: wifi_init_sta finished.[0m
+[0;32mI (733) WiFi System: Connecting to AP...[0m
+[0;33mW (733) MQTT: Other event id: 7[0m
+[1;31mE (743) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (743) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (743) mqtt_client: Error transport connect[0m
+[1;31mE (753) MQTT: MQTT Error occurred[0m
+[1;31mE (753) MQTT: Last error code reported from esp-tls: 0x8004[0m
+[1;31mE (753) MQTT: Last tls stack error number: 0x0[0m
+[1;31mE (763) MQTT: Last captured errno : 0 (Success)[0m
+[0;33mW (763) MQTT: MQTT Disconnected[0m
+[0;32mI (743) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (773) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (783) Soil Moisture: Sensor 1 moisture: 81%[0m
+[0;32mI (783) Soil Moisture: Sensor 2 moisture: 80%[0m
+[0;32mI (783) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (793) Soil Moisture: Sensor 3 moisture: 73%[0m
+[0;32mI (793) Soil Moisture: Sensor 4 moisture: 69%[0m
+[0;32mI (793) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (803) Soil Moisture: Average moisture: 75%[0m
+[0;32mI (923) wifi:connected with Main Server, aid = 1, channel 1, BW20, bssid = 78:8c:b5:50:7c:db[0m
+[0;32mI (923) wifi:security: WPA2-PSK, phy: bgn, rssi: -62[0m
+[0;32mI (923) wifi:pm start, type: 1[0m
+
+[0;32mI (923) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (943) wifi:<ba-add>idx:0 (ifx:0, 78:8c:b5:50:7c:db), tid:0, ssn:3, winSize:64[0m
+[0;32mI (953) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (1803) Soil Moisture: Sensor 1 moisture: 100%[0m
+[0;32mI (1803) Soil Moisture: Sensor 2 moisture: 100%[0m
+[0;32mI (1803) Soil Moisture: Sensor 3 moisture: 100%[0m
+[0;32mI (1803) Soil Moisture: Sensor 4 moisture: 100%[0m
+[0;32mI (1803) Soil Moisture: Average moisture: 100%[0m
+[0;32mI (1953) esp_netif_handlers: sta ip: 192.168.1.160, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (1953) WiFi System: Got IP:192.168.1.160[0m
+[0;32mI (2813) Soil Moisture: Sensor 1 moisture: 36%[0m
+[0;32mI (2813) Soil Moisture: Sensor 2 moisture: 27%[0m
+[0;32mI (2813) Soil Moisture: Sensor 3 moisture: 26%[0m
+[0;32mI (2813) Soil Moisture: Sensor 4 moisture: 51%[0m
+[0;32mI (2813) Soil Moisture: Average moisture: 35%[0m
+[0;32mI (3823) Soil Moisture: Sensor 1 moisture: 100%[0m
+[0;32mI (3823) Soil Moisture: Sensor 2 moisture: 100%[0m
+[0;32mI (3823) Soil Moisture: Sensor 3 moisture: 100%[0m
+[0;32mI (3823) Soil Moisture: Sensor 4 moisture: 100%[0m
+[0;32mI (3823) Soil Moisture: Average moisture: 100%[0m
+[0;32mI (4833) Soil Moisture: Sensor 1 moisture: 47%[0m
+[0;32mI (4833) Soil Moisture: Sensor 2 moisture: 55%[0m
+[0;32mI (4833) Soil Moisture: Sensor 3 moisture: 52%[0m
+[0;32mI (4833) Soil Moisture: Sensor 4 moisture: 78%[0m
+[0;32mI (4833) Soil Moisture: Average moisture: 58%[0m
+[0;32mI (5843) Soil Moisture: Sensor 1 moisture: 99%[0m
+[0;32mI (5843) Soil Moisture: Sensor 2 moisture: 97%[0m
+[0;32mI (5843) Soil Moisture: Sensor 3 moisture: 96%[0m
+[0;32mI (5843) Soil Moisture: Sensor 4 moisture: 98%[0m
+[0;32mI (5843) Soil Moisture: Average moisture: 97%[0m
+[0;32mI (6853) Soil Moisture: Sensor 1 moisture: 46%[0m
+[0;32mI (6853) Soil Moisture: Sensor 2 moisture: 29%[0m
+[0;32mI (6853) Soil Moisture: Sensor 3 moisture: 34%[0m
+[0;32mI (6853) Soil Moisture: Sensor 4 moisture: 60%[0m
+[0;32mI (6853) Soil Moisture: Average moisture: 42%[0m
+[0;32mI (7863) Soil Moisture: Sensor 1 moisture: 100%[0m
+[0;32mI (7863) Soil Moisture: Sensor 2 moisture: 100%[0m
+[0;32mI (7863) Soil Moisture: Sensor 3 moisture: 100%[0m
+[0;32mI (7863) Soil Moisture: Sensor 4 moisture: 100%[0m
+[0;32mI (7863) Soil Moisture: Average moisture: 100%[0m
+[0;32mI (8873) Soil Moisture: Sensor 1 moisture: 35%[0m
+[0;32mI (8873) Soil Moisture: Sensor 2 moisture: 21%[0m
+[0;32mI (8873) Soil Moisture: Sensor 3 moisture: 32%[0m
+[0;32mI (8873) Soil Moisture: Sensor 4 moisture: 48%[0m
+[0;32mI (8873) Soil Moisture: Average moisture: 34%[0m
+[0;32mI (9883) Soil Moisture: Sensor 1 moisture: 100%[0m
+[0;32mI (9883) Soil Moisture: Sensor 2 moisture: 100%[0m
+[0;32mI (9883) Soil Moisture: Sensor 3 moisture: 100%[0m
+[0;32mI (9883) Soil Moisture: Sensor 4 moisture: 100%[0m
+[0;32mI (9883) Soil Moisture: Average moisture: 100%[0m
+[0;33mW (10773) MQTT: Other event id: 7[0m
+[0;32mI (10893) Soil Moisture: Sensor 1 moisture: 51%[0m
+[0;32mI (10893) Soil Moisture: Sensor 2 moisture: 35%[0m
+[0;32mI (10893) Soil Moisture: Sensor 3 moisture: 37%[0m
+[0;32mI (10893) Soil Moisture: Sensor 4 moisture: 64%[0m
+[0;32mI (10893) Soil Moisture: Average moisture: 46%[0m
+[0;32mI (11003) wifi:<ba-add>idx:1 (ifx:0, 78:8c:b5:50:7c:db), tid:1, ssn:0, winSize:64[0m
+[0;32mI (11213) MQTT: MQTT Connected[0m
+[0;32mI (11413) MQTT: MQTT Subscribed[0m
+[0;32mI (11903) Soil Moisture: Sensor 1 moisture: 100%[0m
+[0;32mI (11903) Soil Moisture: Sensor 2 moisture: 100%[0m
+[0;32mI (11903) Soil Moisture: Sensor 3 moisture: 100%[0m
+[0;32mI (11903) Soil Moisture: Sensor 4 moisture: 100%[0m
+[0;32mI (11903) Soil Moisture: Average moisture: 100%[0m
+[0;32mI (12073) MQTT: MQTT Data Published[0m
+[0;32mI (12913) Soil Moisture: Sensor 1 moisture: 72%[0m
+[0;32mI (12913) Soil Moisture: Sensor 2 moisture: 55%[0m
+[0;32mI (12913) Soil Moisture: Sensor 3 moisture: 54%[0m
+[0;32mI (12913) Soil Moisture: Sensor 4 moisture: 100%[0m
+[0;32mI (12913) Soil Moisture: Average moisture: 70%[0m
+[0;32mI (13073) MQTT: MQTT Data Published[0m
+[0;32mI (13923) Soil Moisture: Sensor 1 moisture: 80%[0m
+[0;32mI (13923) Soil Moisture: Sensor 2 moisture: 80%[0m
+[0;32mI (13923) Soil Moisture: Sensor 3 moisture: 76%[0m
+[0;32mI (13923) Soil Moisture: Sensor 4 moisture: 82%[0m
+[0;32mI (13923) Soil Moisture: Average moisture: 79%[0m
+[0;32mI (14273) MQTT: MQTT Data Published[0m
+[0;32mI (14933) Soil Moisture: Sensor 1 moisture: 79%[0m
+[0;32mI (14933) Soil Moisture: Sensor 2 moisture: 57%[0m
+[0;32mI (14933) Soil Moisture: Sensor 3 moisture: 62%[0m
+[0;32mI (14933) Soil Moisture: Sensor 4 moisture: 100%[0m
+[0;32mI (14933) Soil Moisture: Average moisture: 74%[0m
+[0;32mI (15203) MQTT: MQTT Data Published[0m
+[0;32mI (15943) Soil Moisture: Sensor 1 moisture: 91%[0m
+[0;32mI (15943) Soil Moisture: Sensor 2 moisture: 89%[0m
+[0;32mI (15943) Soil Moisture: Sensor 3 moisture: 85%[0m
+[0;32mI (15943) Soil Moisture: Sensor 4 moisture: 91%[0m
+[0;32mI (15943) Soil Moisture: Average moisture: 89%[0m
+[0;32mI (16143) MQTT: MQTT Data Published[0m
+[0;32mI (16953) Soil Moisture: Sensor 1 moisture: 66%[0m
+[0;32mI (16953) Soil Moisture: Sensor 2 moisture: 46%[0m
+[0;32mI (16953) Soil Moisture: Sensor 3 moisture: 53%[0m
+[0;32mI (16953) Soil Moisture: Sensor 4 moisture: 88%[0m
+[0;32mI (16953) Soil Moisture: Average moisture: 63%[0m
+[0;32mI (17163) MQTT: MQTT Data Published[0m
+[0;32mI (17963) Soil Moisture: Sensor 1 moisture: 100%[0m
+[0;32mI (17963) Soil Moisture: Sensor 2 moisture: 97%[0m
+[0;32mI (17963) Soil Moisture: Sensor 3 moisture: 95%[0m
+[0;32mI (17963) Soil Moisture: Sensor 4 moisture: 98%[0m
+[0;32mI (17963) Soil Moisture: Average moisture: 97%[0m
+[0;32mI (18193) MQTT: MQTT Data Published[0m
+[0;32mI (18973) Soil Moisture: Sensor 1 moisture: 77%[0m
+[0;32mI (18973) Soil Moisture: Sensor 2 moisture: 61%[0m
+[0;32mI (18973) Soil Moisture: Sensor 3 moisture: 60%[0m
+[0;32mI (18973) Soil Moisture: Sensor 4 moisture: 100%[0m
+[0;32mI (18973) Soil Moisture: Average moisture: 74%[0m
+[0;32mI (19133) MQTT: MQTT Data Published[0m
+[0;32mI (19983) Soil Moisture: Sensor 1 moisture: 94%[0m
+[0;32mI (19983) Soil Moisture: Sensor 2 moisture: 93%[0m
+[0;32mI (19983) Soil Moisture: Sensor 3 moisture: 91%[0m
+[0;32mI (19983) Soil Moisture: Sensor 4 moisture: 97%[0m
+[0;32mI (19983) Soil Moisture: Average moisture: 93%[0m
+[0;32mI (20153) MQTT: MQTT Data Published[0m
+[0;32mI (20993) Soil Moisture: Sensor 1 moisture: 100%[0m
+[0;32mI (20993) Soil Moisture: Sensor 2 moisture: 83%[0m
+[0;32mI (20993) Soil Moisture: Sensor 3 moisture: 81%[0m
+[0;32mI (20993) Soil Moisture: Sensor 4 moisture: 99%[0m
+[0;32mI (20993) Soil Moisture: Average moisture: 90%[0m
+[0;32mI (21173) MQTT: MQTT Data Published[0m
+[0;32mI (22003) Soil Moisture: Sensor 1 moisture: 43%[0m
+[0;32mI (22003) Soil Moisture: Sensor 2 moisture: 49%[0m
+[0;32mI (22003) Soil Moisture: Sensor 3 moisture: 45%[0m
+[0;32mI (22003) Soil Moisture: Sensor 4 moisture: 60%[0m
+[0;32mI (22003) Soil Moisture: Average moisture: 49%[0m
+[0;32mI (22203) MQTT: MQTT Data Published[0m
+[0;32mI (23013) Soil Moisture: Sensor 1 moisture: 100%[0m
+[0;32mI (23013) Soil Moisture: Sensor 2 moisture: 100%[0m
+[0;32mI (23013) Soil Moisture: Sensor 3 moisture: 100%[0m
+[0;32mI (23013) Soil Moisture: Sensor 4 moisture: 100%[0m
+[0;32mI (23013) Soil Moisture: Average moisture: 100%[0m
+[0;32mI (23293) MQTT: MQTT Data Published[0m
+[0;32mI (24023) Soil Moisture: Sensor 1 moisture: 61%[0m
+[0;32mI (24023) Soil Moisture: Sensor 2 moisture: 66%[0m
+[0;32mI (24023) Soil Moisture: Sensor 3 moisture: 61%[0m
+[0;32mI (24023) Soil Moisture: Sensor 4 moisture: 79%[0m
+[0;32mI (24023) Soil Moisture: Average moisture: 66%[0m
+[0;32mI (24313) MQTT: MQTT Data Published[0m
+[0;32mI (25033) Soil Moisture: Sensor 1 moisture: 100%[0m
+[0;32mI (25033) Soil Moisture: Sensor 2 moisture: 76%[0m
+[0;32mI (25033) Soil Moisture: Sensor 3 moisture: 77%[0m
+[0;32mI (25033) Soil Moisture: Sensor 4 moisture: 100%[0m
+[0;32mI (25033) Soil Moisture: Average moisture: 88%[0m
+[0;32mI (25243) MQTT: MQTT Data Published[0m
+[0;32mI (26043) Soil Moisture: Sensor 1 moisture: 86%[0m
+[0;32mI (26043) Soil Moisture: Sensor 2 moisture: 88%[0m
+[0;32mI (26043) Soil Moisture: Sensor 3 moisture: 84%[0m
+[0;32mI (26043) Soil Moisture: Sensor 4 moisture: 90%[0m
+[0;32mI (26043) Soil Moisture: Average moisture: 87%[0m
+[0;32mI (26363) MQTT: MQTT Data Published[0m
+[0;32mI (27053) Soil Moisture: Sensor 1 moisture: 94%[0m
+[0;32mI (27053) Soil Moisture: Sensor 2 moisture: 77%[0m
+[0;32mI (27053) Soil Moisture: Sensor 3 moisture: 72%[0m
+[0;32mI (27053) Soil Moisture: Sensor 4 moisture: 98%[0m
+[0;32mI (27053) Soil Moisture: Average moisture: 85%[0m
+[0;32mI (27383) MQTT: MQTT Data Published[0m
+[0;32mI (28063) Soil Moisture: Sensor 1 moisture: 75%[0m
+[0;32mI (28063) Soil Moisture: Sensor 2 moisture: 81%[0m
+[0;32mI (28063) Soil Moisture: Sensor 3 moisture: 78%[0m
+[0;32mI (28063) Soil Moisture: Sensor 4 moisture: 96%[0m
+[0;32mI (28063) Soil Moisture: Average moisture: 82%[0m
+[0;32mI (28223) MQTT: MQTT Data Published[0m
+[0;32mI (29073) Soil Moisture: Sensor 1 moisture: 100%[0m
+[0;32mI (29073) Soil Moisture: Sensor 2 moisture: 100%[0m
+[0;32mI (29073) Soil Moisture: Sensor 3 moisture: 100%[0m
+[0;32mI (29073) Soil Moisture: Sensor 4 moisture: 100%[0m
+[0;32mI (29073) Soil Moisture: Average moisture: 100%[0m
+[0;32mI (29233) MQTT: MQTT Data Published[0m
+[0;32mI (30083) Soil Moisture: Sensor 1 moisture: 39%[0m
+[0;32mI (30083) Soil Moisture: Sensor 2 moisture: 32%[0m
+[0;32mI (30083) Soil Moisture: Sensor 3 moisture: 29%[0m
+[0;32mI (30083) Soil Moisture: Sensor 4 moisture: 51%[0m
+[0;32mI (30083) Soil Moisture: Average moisture: 37%[0m
+[0;32mI (30253) MQTT: MQTT Data Published[0m
+[0;32mI (31093) Soil Moisture: Sensor 1 moisture: 100%[0m
+[0;32mI (31093) Soil Moisture: Sensor 2 moisture: 100%[0m
+[0;32mI (31093) Soil Moisture: Sensor 3 moisture: 100%[0m
+[0;32mI (31093) Soil Moisture: Sensor 4 moisture: 100%[0m
+[0;32mI (31093) Soil Moisture: Average moisture: 100%[0m
+[0;32mI (31273) MQTT: MQTT Data Published[0m
+[0;32mI (32103) Soil Moisture: Sensor 1 moisture: 45%[0m
+[0;32mI (32103) Soil Moisture: Sensor 2 moisture: 49%[0m
+[0;32mI (32103) Soil Moisture: Sensor 3 moisture: 42%[0m
+[0;32mI (32103) Soil Moisture: Sensor 4 moisture: 68%[0m
+[0;32mI (32103) Soil Moisture: Average moisture: 51%[0m
+[0;32mI (32313) MQTT: MQTT Data Published[0m
+[0;32mI (33113) Soil Moisture: Sensor 1 moisture: 100%[0m
+[0;32mI (33113) Soil Moisture: Sensor 2 moisture: 100%[0m
+[0;32mI (33113) Soil Moisture: Sensor 3 moisture: 100%[0m
+[0;32mI (33113) Soil Moisture: Sensor 4 moisture: 100%[0m
+[0;32mI (33113) Soil Moisture: Average moisture: 100%[0m
+[0;32mI (33323) MQTT: MQTT Data Published[0m
+[0;32mI (34123) Soil Moisture: Sensor 1 moisture: 43%[0m
+[0;32mI (34123) Soil Moisture: Sensor 2 moisture: 52%[0m
+[0;32mI (34123) Soil Moisture: Sensor 3 moisture: 49%[0m
+[0;32mI (34123) Soil Moisture: Sensor 4 moisture: 59%[0m
+[0;32mI (34123) Soil Moisture: Average moisture: 50%[0m
+[0;32mI (34343) MQTT: MQTT Data Published[0m
+[0;32mI (35133) Soil Moisture: Sensor 1 moisture: 100%[0m
+[0;32mI (35133) Soil Moisture: Sensor 2 moisture: 100%[0m
+[0;32mI (35133) Soil Moisture: Sensor 3 moisture: 100%[0m
+[0;32mI (35133) Soil Moisture: Sensor 4 moisture: 100%[0m
+[0;32mI (35133) Soil Moisture: Average moisture: 100%[0m
+[0;32mI (35303) MQTT: MQTT Data Published[0m
+[0;32mI (36143) Soil Moisture: Sensor 1 moisture: 40%[0m
+[0;32mI (36143) Soil Moisture: Sensor 2 moisture: 51%[0m
+[0;32mI (36143) Soil Moisture: Sensor 3 moisture: 44%[0m
+[0;32mI (36143) Soil Moisture: Sensor 4 moisture: 72%[0m
+[0;32mI (36143) Soil Moisture: Average moisture: 51%[0m
+[0;32mI (36393) MQTT: MQTT Data Published[0m
+[0;32mI (37153) Soil Moisture: Sensor 1 moisture: 100%[0m
+[0;32mI (37153) Soil Moisture: Sensor 2 moisture: 100%[0m
+[0;32mI (37153) Soil Moisture: Sensor 3 moisture: 100%[0m
+[0;32mI (37153) Soil Moisture: Sensor 4 moisture: 100%[0m
+[0;32mI (37153) Soil Moisture: Average moisture: 100%[0m
+[0;32mI (37423) MQTT: MQTT Data Published[0m
+[0;32mI (38163) Soil Moisture: Sensor 1 moisture: 25%[0m
+[0;32mI (38163) Soil Moisture: Sensor 2 moisture: 10%[0m
+[0;32mI (38163) Soil Moisture: Sensor 3 moisture: 13%[0m
+[0;32mI (38163) Soil Moisture: Sensor 4 moisture: 41%[0m
+[0;32mI (38163) Soil Moisture: Average moisture: 22%[0m
+[0;32mI (38343) MQTT: MQTT Data Published[0m
+[0;32mI (39173) Soil Moisture: Sensor 1 moisture: 100%[0m
+[0;32mI (39173) Soil Moisture: Sensor 2 moisture: 100%[0m
+[0;32mI (39173) Soil Moisture: Sensor 3 moisture: 100%[0m
+[0;32mI (39173) Soil Moisture: Sensor 4 moisture: 100%[0m
+[0;32mI (39173) Soil Moisture: Average moisture: 100%[0m
+[0;32mI (39373) MQTT: MQTT Data Published[0m
+[0;32mI (40183) Soil Moisture: Sensor 1 moisture: 9%[0m
+[0;32mI (40183) Soil Moisture: Sensor 2 moisture: 0%[0m
+[0;32mI (40183) Soil Moisture: Sensor 3 moisture: 0%[0m
+[0;32mI (40183) Soil Moisture: Sensor 4 moisture: 30%[0m
+[0;32mI (40183) Soil Moisture: Average moisture: 9%[0m
+[0;33mW (40193) Warning: LOW SOIL MOISTURE: MOTOR ON (Average: 9%)[0m
+[0;32mI (40403) MQTT: MQTT Data Published[0m
+[0;32mI (41193) Soil Moisture: Sensor 1 moisture: 100%[0m
+[0;32mI (41193) Soil Moisture: Sensor 2 moisture: 100%[0m
+[0;32mI (41193) Soil Moisture: Sensor 3 moisture: 100%[0m
+[0;32mI (41193) Soil Moisture: Sensor 4 moisture: 100%[0m
+[0;32mI (41193) Soil Moisture: Average moisture: 100%[0m
+[0;32mI (41203) Soil Moisture: SUFFICIENT SOIL MOISTURE: MOTOR OFF (Average: 100%)[0m
+[0;32mI (41353) MQTT: MQTT Data Published[0m
+[0;32mI (42203) Soil Moisture: Sensor 1 moisture: 25%[0m
+[0;32mI (42203) Soil Moisture: Sensor 2 moisture: 23%[0m
+[0;32mI (42203) Soil Moisture: Sensor 3 moisture: 20%[0m
+[0;32mI (42203) Soil Moisture: Sensor 4 moisture: 42%[0m
+[0;32mI (42203) Soil Moisture: Average moisture: 27%[0m
+[0;32mI (42433) MQTT: MQTT Data Published[0m
+[0;32mI (43213) Soil Moisture: Sensor 1 moisture: 100%[0m
+[0;32mI (43213) Soil Moisture: Sensor 2 moisture: 100%[0m
+[0;32mI (43213) Soil Moisture: Sensor 3 moisture: 100%[0m
+[0;32mI (43213) Soil Moisture: Sensor 4 moisture: 100%[0m
+[0;32mI (43213) Soil Moisture: Average moisture: 100%[0m
+[0;32mI (43383) MQTT: MQTT Data Published[0m
+[0;32mI (44223) Soil Moisture: Sensor 1 moisture: 48%[0m
+[0;32mI (44223) Soil Moisture: Sensor 2 moisture: 51%[0m
+[0;32mI (44223) Soil Moisture: Sensor 3 moisture: 43%[0m
+[0;32mI (44223) Soil Moisture: Sensor 4 moisture: 82%[0m
+[0;32mI (44223) Soil Moisture: Average moisture: 56%[0m
+[0;32mI (44413) MQTT: MQTT Data Published[0m
+[0;32mI (45233) Soil Moisture: Sensor 1 moisture: 100%[0m
+[0;32mI (45233) Soil Moisture: Sensor 2 moisture: 100%[0m
+[0;32mI (45233) Soil Moisture: Sensor 3 moisture: 100%[0m
+[0;32mI (45233) Soil Moisture: Sensor 4 moisture: 100%[0m
+[0;32mI (45233) Soil Moisture: Average moisture: 100%[0m
+[0;32mI (45433) MQTT: MQTT Data Published[0m
+[0;32mI (46243) Soil Moisture: Sensor 1 moisture: 51%[0m
+[0;32mI (46243) Soil Moisture: Sensor 2 moisture: 33%[0m
+[0;32mI (46243) Soil Moisture: Sensor 3 moisture: 36%[0m
+[0;32mI (46243) Soil Moisture: Sensor 4 moisture: 70%[0m
+[0;32mI (46243) Soil Moisture: Average moisture: 47%[0m
+[0;32mI (46463) MQTT: MQTT Data Published[0m
+[0;32mI (47253) Soil Moisture: Sensor 1 moisture: 100%[0m
+[0;32mI (47253) Soil Moisture: Sensor 2 moisture: 100%[0m
+[0;32mI (47253) Soil Moisture: Sensor 3 moisture: 100%[0m
+[0;32mI (47253) Soil Moisture: Sensor 4 moisture: 100%[0m
+[0;32mI (47253) Soil Moisture: Average moisture: 100%[0m
+[0;32mI (47453) MQTT: MQTT Data Published[0m
+[0;32mI (48263) Soil Moisture: Sensor 1 moisture: 38%[0m
+[0;32mI (48263) Soil Moisture: Sensor 2 moisture: 27%[0m
+[0;32mI (48263) Soil Moisture: Sensor 3 moisture: 23%[0m
+[0;32mI (48263) Soil Moisture: Sensor 4 moisture: 58%[0m
+[0;32mI (48263) Soil Moisture: Average moisture: 36%[0m
+[0;32mI (48523) MQTT: MQTT Data Published[0m
+[0;32mI (49273) Soil Moisture: Sensor 1 moisture: 100%[0m
+[0;32mI (49273) Soil Moisture: Sensor 2 moisture: 100%[0m
+[0;32mI (49273) Soil Moisture: Sensor 3 moisture: 100%[0m
+[0;32mI (49273) Soil Moisture: Sensor 4 moisture: 100%[0m
+[0;32mI (49273) Soil Moisture: Average moisture: 100%[0m
+[0;32mI (49453) MQTT: MQTT Data Published[0m
+[0;32mI (50283) Soil Moisture: Sensor 1 moisture: 50%[0m
+[0;32mI (50283) Soil Moisture: Sensor 2 moisture: 38%[0m
+[0;32mI (50283) Soil Moisture: Sensor 3 moisture: 36%[0m
+[0;32mI (50283) Soil Moisture: Sensor 4 moisture: 70%[0m
+[0;32mI (50283) Soil Moisture: Average moisture: 48%[0m
+[0;32mI (50453) MQTT: MQTT Data Published[0m
+[0;32mI (51293) Soil Moisture: Sensor 1 moisture: 100%[0m
+[0;32mI (51293) Soil Moisture: Sensor 2 moisture: 100%[0m
+[0;32mI (51293) Soil Moisture: Sensor 3 moisture: 100%[0m
+[0;32mI (51293) Soil Moisture: Sensor 4 moisture: 100%[0m
+[0;32mI (51293) Soil Moisture: Average moisture: 100%[0m
+[0;32mI (51553) MQTT: MQTT Data Published[0m
+[0;32mI (52303) Soil Moisture: Sensor 1 moisture: 70%[0m
+[0;32mI (52303) Soil Moisture: Sensor 2 moisture: 63%[0m
+[0;32mI (52303) Soil Moisture: Sensor 3 moisture: 49%[0m
+[0;32mI (52303) Soil Moisture: Sensor 4 moisture: 100%[0m
+[0;32mI (52303) Soil Moisture: Average moisture: 70%[0m
+[0;32mI (53193) MQTT: MQTT Data Published[0m
+[0;32mI (53313) Soil Moisture: Sensor 1 moisture: 85%[0m
+[0;32mI (53313) Soil Moisture: Sensor 2 moisture: 85%[0m
+[0;32mI (53313) Soil Moisture: Sensor 3 moisture: 80%[0m
+[0;32mI (53313) Soil Moisture: Sensor 4 moisture: 88%[0m
+[0;32mI (53313) Soil Moisture: Average moisture: 84%[0m
+[0;32mI (53603) MQTT: MQTT Data Published[0m
+[0;32mI (54323) Soil Moisture: Sensor 1 moisture: 74%[0m
+[0;32mI (54323) Soil Moisture: Sensor 2 moisture: 54%[0m
+[0;32mI (54323) Soil Moisture: Sensor 3 moisture: 57%[0m
+[0;32mI (54323) Soil Moisture: Sensor 4 moisture: 100%[0m
+[0;32mI (54323) Soil Moisture: Average moisture: 71%[0m
+[0;32mI (54523) MQTT: MQTT Data Published[0m
+[0;32mI (55333) Soil Moisture: Sensor 1 moisture: 95%[0m
+[0;32mI (55333) Soil Moisture: Sensor 2 moisture: 92%[0m
+[0;32mI (55333) Soil Moisture: Sensor 3 moisture: 89%[0m
+[0;32mI (55333) Soil Moisture: Sensor 4 moisture: 94%[0m
+[0;32mI (55333) Soil Moisture: Average moisture: 92%[0m
+[0;32mI (55543) MQTT: MQTT Data Published[0m
+[0;32mI (56343) Soil Moisture: Sensor 1 moisture: 66%[0m
+[0;32mI (56343) Soil Moisture: Sensor 2 moisture: 47%[0m
+[0;32mI (56343) Soil Moisture: Sensor 3 moisture: 49%[0m
+[0;32mI (56343) Soil Moisture: Sensor 4 moisture: 90%[0m
+[0;32mI (56343) Soil Moisture: Average moisture: 63%[0m
+[0;32mI (56573) MQTT: MQTT Data Published[0m
+[0;32mI (57353) Soil Moisture: Sensor 1 moisture: 100%[0m
+[0;32mI (57353) Soil Moisture: Sensor 2 moisture: 97%[0m
+[0;32mI (57353) Soil Moisture: Sensor 3 moisture: 94%[0m
+[0;32mI (57353) Soil Moisture: Sensor 4 moisture: 99%[0m
+[0;32mI (57353) Soil Moisture: Average moisture: 97%[0m
+[0;32mI (57513) MQTT: MQTT Data Published[0m
+[0;32mI (58363) Soil Moisture: Sensor 1 moisture: 69%[0m
+[0;32mI (58363) Soil Moisture: Sensor 2 moisture: 52%[0m
+[0;32mI (58363) Soil Moisture: Sensor 3 moisture: 49%[0m
+[0;32mI (58363) Soil Moisture: Sensor 4 moisture: 93%[0m
+[0;32mI (58363) Soil Moisture: Average moisture: 65%[0m
+[0;32mI (58523) MQTT: MQTT Data Published[0m
+[0;32mI (59373) Soil Moisture: Sensor 1 moisture: 95%[0m
+[0;32mI (59373) Soil Moisture: Sensor 2 moisture: 94%[0m
+[0;32mI (59373) Soil Moisture: Sensor 3 moisture: 92%[0m
+[0;32mI (59373) Soil Moisture: Sensor 4 moisture: 98%[0m
+[0;32mI (59373) Soil Moisture: Average moisture: 94%[0m
+[0;32mI (59743) wifi:<ba-clr>idx:0, tid:0, ssn:3, winSize:64[0m
+[0;32mI (60263) MQTT: MQTT Data Published[0m
+[0;32mI (60383) Soil Moisture: Sensor 1 moisture: 96%[0m
+[0;32mI (60383) Soil Moisture: Sensor 2 moisture: 84%[0m
+[0;32mI (60383) Soil Moisture: Sensor 3 moisture: 70%[0m
+[0;32mI (60383) Soil Moisture: Sensor 4 moisture: 100%[0m
+[0;32mI (60383) Soil Moisture: Average moisture: 87%[0m
+[0;32mI (60563) MQTT: MQTT Data Published[0m
+[0;32mI (61393) Soil Moisture: Sensor 1 moisture: 49%[0m
+[0;32mI (61393) Soil Moisture: Sensor 2 moisture: 57%[0m
+[0;32mI (61393) Soil Moisture: Sensor 3 moisture: 52%[0m
+[0;32mI (61393) Soil Moisture: Sensor 4 moisture: 71%[0m
+[0;32mI (61393) Soil Moisture: Average moisture: 57%[0m
+[0;32mI (61553) MQTT: MQTT Data Published[0m
+[0;32mI (62403) Soil Moisture: Sensor 1 moisture: 100%[0m
+[0;32mI (62403) Soil Moisture: Sensor 2 moisture: 100%[0m
+[0;32mI (62403) Soil Moisture: Sensor 3 moisture: 100%[0m
+[0;32mI (62403) Soil Moisture: Sensor 4 moisture: 100%[0m
+[0;32mI (62403) Soil Moisture: Average moisture: 100%[0m
+[0;32mI (62613) MQTT: MQTT Data Published[0m
+[0;32mI (63413) Soil Moisture: Sensor 1 moisture: 71%[0m
+[0;32mI (63413) Soil Moisture: Sensor 2 moisture: 74%[0m
+[0;32mI (63413) Soil Moisture: Sensor 3 moisture: 70%[0m
+[0;32mI (63413) Soil Moisture: Sensor 4 moisture: 85%[0m
+[0;32mI (63413) Soil Moisture: Average moisture: 75%[0m
+[0;32mI (63643) MQTT: MQTT Data Published[0m
+[0;32mI (64423) Soil Moisture: Sensor 1 moisture: 100%[0m
+[0;32mI (64423) Soil Moisture: Sensor 2 moisture: 87%[0m
+[0;32mI (64423) Soil Moisture: Sensor 3 moisture: 90%[0m
+[0;32mI (64423) Soil Moisture: Sensor 4 moisture: 100%[0m
+[0;32mI (64423) Soil Moisture: Average moisture: 94%[0m
+[0;32mI (64583) MQTT: MQTT Data Published[0m
+[0;32mI (65433) Soil Moisture: Sensor 1 moisture: 73%[0m
+[0;32mI (65433) Soil Moisture: Sensor 2 moisture: 75%[0m
+[0;32mI (65433) Soil Moisture: Sensor 3 moisture: 68%[0m
+[0;32mI (65433) Soil Moisture: Sensor 4 moisture: 85%[0m
+[0;32mI (65433) Soil Moisture: Average moisture: 75%[0m
+[0;32mI (65593) MQTT: MQTT Data Published[0m
+[0;32mI (66443) Soil Moisture: Sensor 1 moisture: 80%[0m
+[0;32mI (66443) Soil Moisture: Sensor 2 moisture: 61%[0m
+[0;32mI (66443) Soil Moisture: Sensor 3 moisture: 60%[0m
+[0;32mI (66443) Soil Moisture: Sensor 4 moisture: 100%[0m
+[0;32mI (66443) Soil Moisture: Average moisture: 75%[0m
+[0;32mI (66703) MQTT: MQTT Data Published[0m
+[0;32mI (67453) Soil Moisture: Sensor 1 moisture: 98%[0m
+[0;32mI (67453) Soil Moisture: Sensor 2 moisture: 97%[0m
+[0;32mI (67453) Soil Moisture: Sensor 3 moisture: 95%[0m
+[0;32mI (67453) Soil Moisture: Sensor 4 moisture: 100%[0m
+[0;32mI (67453) Soil Moisture: Average moisture: 97%[0m
+[0;32mI (67643) MQTT: MQTT Data Published[0m
+[0;32mI (68463) Soil Moisture: Sensor 1 moisture: 100%[0m
+[0;32mI (68463) Soil Moisture: Sensor 2 moisture: 96%[0m
+[0;32mI (68463) Soil Moisture: Sensor 3 moisture: 85%[0m
+[0;32mI (68463) Soil Moisture: Sensor 4 moisture: 100%[0m
+[0;32mI (68463) Soil Moisture: Average moisture: 95%[0m
+[0;32mI (68673) MQTT: MQTT Data Published[0m
+[0;32mI (69473) Soil Moisture: Sensor 1 moisture: 59%[0m
+[0;32mI (69473) Soil Moisture: Sensor 2 moisture: 60%[0m
+[0;32mI (69473) Soil Moisture: Sensor 3 moisture: 53%[0m
+[0;32mI (69473) Soil Moisture: Sensor 4 moisture: 86%[0m
+[0;32mI (69473) Soil Moisture: Average moisture: 64%[0m
+[0;32mI (69703) MQTT: MQTT Data Published[0m
+[0;32mI (70483) Soil Moisture: Sensor 1 moisture: 100%[0m
+[0;32mI (70483) Soil Moisture: Sensor 2 moisture: 100%[0m
+[0;32mI (70483) Soil Moisture: Sensor 3 moisture: 100%[0m
+[0;32mI (70483) Soil Moisture: Sensor 4 moisture: 100%[0m
+[0;32mI (70483) Soil Moisture: Average moisture: 100%[0m
+[0;32mI (70643) MQTT: MQTT Data Published[0m
+[0;32mI (71493) Soil Moisture: Sensor 1 moisture: 35%[0m
+[0;32mI (71493) Soil Moisture: Sensor 2 moisture: 30%[0m
+[0;32mI (71493) Soil Moisture: Sensor 3 moisture: 28%[0m
+[0;32mI (71493) Soil Moisture: Sensor 4 moisture: 47%[0m
+[0;32mI (71493) Soil Moisture: Average moisture: 35%[0m
+[0;32mI (71653) MQTT: MQTT Data Published[0m
+[0;32mI (72503) Soil Moisture: Sensor 1 moisture: 100%[0m
+[0;32mI (72503) Soil Moisture: Sensor 2 moisture: 100%[0m
+[0;32mI (72503) Soil Moisture: Sensor 3 moisture: 100%[0m
+[0;32mI (72503) Soil Moisture: Sensor 4 moisture: 100%[0m
+[0;32mI (72503) Soil Moisture: Average moisture: 100%[0m
+[0;32mI (72663) MQTT: MQTT Data Published[0m
+[0;32mI (73513) Soil Moisture: Sensor 1 moisture: 43%[0m
+[0;32mI (73513) Soil Moisture: Sensor 2 moisture: 44%[0m
+[0;32mI (73513) Soil Moisture: Sensor 3 moisture: 37%[0m
+[0;32mI (73513) Soil Moisture: Sensor 4 moisture: 62%[0m
+[0;32mI (73513) Soil Moisture: Average moisture: 46%[0m
+[0;32mI (73673) MQTT: MQTT Data Published[0m
+[0;32mI (74523) Soil Moisture: Sensor 1 moisture: 100%[0m
+[0;32mI (74523) Soil Moisture: Sensor 2 moisture: 100%[0m
+[0;32mI (74523) Soil Moisture: Sensor 3 moisture: 100%[0m
+[0;32mI (74523) Soil Moisture: Sensor 4 moisture: 100%[0m
+[0;32mI (74523) Soil Moisture: Average moisture: 100%[0m
+[0;32mI (74703) MQTT: MQTT Data Published[0m
+[0;32mI (75533) Soil Moisture: Sensor 1 moisture: 53%[0m
+[0;32mI (75533) Soil Moisture: Sensor 2 moisture: 61%[0m
+[0;32mI (75533) Soil Moisture: Sensor 3 moisture: 59%[0m
+[0;32mI (75533) Soil Moisture: Sensor 4 moisture: 62%[0m
+[0;32mI (75533) Soil Moisture: Average moisture: 58%[0m
+[0;32mI (75823) MQTT: MQTT Data Published[0m
+[0;32mI (76543) Soil Moisture: Sensor 1 moisture: 100%[0m
+[0;32mI (76543) Soil Moisture: Sensor 2 moisture: 100%[0m
+[0;32mI (76543) Soil Moisture: Sensor 3 moisture: 100%[0m
+[0;32mI (76543) Soil Moisture: Sensor 4 moisture: 100%[0m
+[0;32mI (76543) Soil Moisture: Average moisture: 100%[0m
+[0;32mI (76743) MQTT: MQTT Data Published[0m
+[0;32mI (77553) Soil Moisture: Sensor 1 moisture: 32%[0m
+[0;32mI (77553) Soil Moisture: Sensor 2 moisture: 33%[0m
+[0;32mI (77553) Soil Moisture: Sensor 3 moisture: 27%[0m
+[0;32mI (77553) Soil Moisture: Sensor 4 moisture: 62%[0m
+[0;32mI (77553) Soil Moisture: Average moisture: 38%[0m
+[0;32mI (78303) MQTT: MQTT Data Published[0m
+[0;32mI (78563) Soil Moisture: Sensor 1 moisture: 100%[0m
+[0;32mI (78563) Soil Moisture: Sensor 2 moisture: 100%[0m
+[0;32mI (78563) Soil Moisture: Sensor 3 moisture: 100%[0m
+[0;32mI (78563) Soil Moisture: Sensor 4 moisture: 100%[0m
+[0;32mI (78563) Soil Moisture: Average moisture: 100%[0m
+[0;32mI (79003) MQTT: MQTT Data Published[0m
+[0;32mI (79573) Soil Moisture: Sensor 1 moisture: 24%[0m
+[0;32mI (79573) Soil Moisture: Sensor 2 moisture: 11%[0m
+[0;32mI (79573) Soil Moisture: Sensor 3 moisture: 15%[0m
+[0;32mI (79573) Soil Moisture: Sensor 4 moisture: 39%[0m
+[0;32mI (79573) Soil Moisture: Average moisture: 22%[0m
+[0;32mI (79733) MQTT: MQTT Data Published[0m
+[0;32mI (80583) Soil Moisture: Sensor 1 moisture: 100%[0m
+[0;32mI (80583) Soil Moisture: Sensor 2 moisture: 100%[0m
+[0;32mI (80583) Soil Moisture: Sensor 3 moisture: 100%[0m
+[0;32mI (80583) Soil Moisture: Sensor 4 moisture: 100%[0m
+[0;32mI (80583) Soil Moisture: Average moisture: 100%[0m
+[0;32mI (80753) MQTT: MQTT Data Published[0m
+[0;32mI (81593) Soil Moisture: Sensor 1 moisture: 12%[0m
+[0;32mI (81593) Soil Moisture: Sensor 2 moisture: 2%[0m
+[0;32mI (81593) Soil Moisture: Sensor 3 moisture: 8%[0m
+[0;32mI (81593) Soil Moisture: Sensor 4 moisture: 31%[0m
+[0;32mI (81593) Soil Moisture: Average moisture: 13%[0m
+[0;33mW (81603) Warning: LOW SOIL MOISTURE: MOTOR ON (Average: 13%)[0m
+[0;32mI (81763) MQTT: MQTT Data Published[0m
+[0;32mI (82603) Soil Moisture: Sensor 1 moisture: 100%[0m
+[0;32mI (82603) Soil Moisture: Sensor 2 moisture: 100%[0m
+[0;32mI (82603) Soil Moisture: Sensor 3 moisture: 100%[0m
+[0;32mI (82603) Soil Moisture: Sensor 4 moisture: 100%[0m
+[0;32mI (82603) Soil Moisture: Average moisture: 100%[0m
+[0;32mI (82613) Soil Moisture: SUFFICIENT SOIL MOISTURE: MOTOR OFF (Average: 100%)[0m
+[0;32mI (82883) MQTT: MQTT Data Published[0m
+[0;32mI (83613) Soil Moisture: Sensor 1 moisture: 32%[0m
+[0;32mI (83613) Soil Moisture: Sensor 2 moisture: 25%[0m
+[0;32mI (83613) Soil Moisture: Sensor 3 moisture: 25%[0m
+[0;32mI (83613) Soil Moisture: Sensor 4 moisture: 50%[0m
+[0;32mI (83613) Soil Moisture: Average moisture: 33%[0m
+[0;32mI (83913) MQTT: MQTT Data Published[0m
+[0;32mI (84623) Soil Moisture: Sensor 1 moisture: 100%[0m
+[0;32mI (84623) Soil Moisture: Sensor 2 moisture: 100%[0m
+[0;32mI (84623) Soil Moisture: Sensor 3 moisture: 100%[0m
+[0;32mI (84623) Soil Moisture: Sensor 4 moisture: 100%[0m
+[0;32mI (84623) Soil Moisture: Average moisture: 100%[0m
+[0;32mI (84933) MQTT: MQTT Data Published[0m
+[0;32mI (85633) Soil Moisture: Sensor 1 moisture: 44%[0m
+[0;32mI (85633) Soil Moisture: Sensor 2 moisture: 49%[0m
+[0;32mI (85633) Soil Moisture: Sensor 3 moisture: 46%[0m
+[0;32mI (85633) Soil Moisture: Sensor 4 moisture: 70%[0m
+[0;32mI (85633) Soil Moisture: Average moisture: 52%[0m
+[0;32mI (86643) Soil Moisture: Sensor 1 moisture: 100%[0m
+[0;32mI (86643) Soil Moisture: Sensor 2 moisture: 99%[0m
+[0;32mI (86643) Soil Moisture: Sensor 3 moisture: 98%[0m
+[0;32mI (86643) Soil Moisture: Sensor 4 moisture: 99%[0m
+[0;32mI (86643) Soil Moisture: Average moisture: 99%[0m
+[0;32mI (86673) MQTT: MQTT Data Published[0m
+[0;32mI (86883) MQTT: MQTT Data Published[0m
+[0;32mI (87653) Soil Moisture: Sensor 1 moisture: 70%[0m
+[0;32mI (87653) Soil Moisture: Sensor 2 moisture: 52%[0m
+[0;32mI (87653) Soil Moisture: Sensor 3 moisture: 52%[0m
+[0;32mI (87653) Soil Moisture: Sensor 4 moisture: 99%[0m
+[0;32mI (87653) Soil Moisture: Average moisture: 68%[0m
+[0;32mI (87813) MQTT: MQTT Data Published[0m
+[0;32mI (88663) Soil Moisture: Sensor 1 moisture: 100%[0m
+[0;32mI (88663) Soil Moisture: Sensor 2 moisture: 100%[0m
+[0;32mI (88663) Soil Moisture: Sensor 3 moisture: 100%[0m
+[0;32mI (88663) Soil Moisture: Sensor 4 moisture: 100%[0m
+[0;32mI (88663) Soil Moisture: Average moisture: 100%[0m
+[0;32mI (88823) MQTT: MQTT Data Published[0m
+[0;32mI (89673) Soil Moisture: Sensor 1 moisture: 60%[0m
+[0;32mI (89673) Soil Moisture: Sensor 2 moisture: 42%[0m
+[0;32mI (89673) Soil Moisture: Sensor 3 moisture: 46%[0m
+[0;32mI (89673) Soil Moisture: Sensor 4 moisture: 82%[0m
+[0;32mI (89673) Soil Moisture: Average moisture: 57%[0m
+[0;32mI (89853) MQTT: MQTT Data Published[0m
+[0;32mI (90683) Soil Moisture: Sensor 1 moisture: 100%[0m
+[0;32mI (90683) Soil Moisture: Sensor 2 moisture: 100%[0m
+[0;32mI (90683) Soil Moisture: Sensor 3 moisture: 99%[0m
+[0;32mI (90683) Soil Moisture: Sensor 4 moisture: 100%[0m
+[0;32mI (90683) Soil Moisture: Average moisture: 99%[0m
+[0;32mI (90883) MQTT: MQTT Data Published[0m
+[0;32mI (91693) Soil Moisture: Sensor 1 moisture: 42%[0m
+[0;32mI (91693) Soil Moisture: Sensor 2 moisture: 35%[0m
+[0;32mI (91693) Soil Moisture: Sensor 3 moisture: 36%[0m
+[0;32mI (91693) Soil Moisture: Sensor 4 moisture: 69%[0m
+[0;32mI (91693) Soil Moisture: Average moisture: 45%[0m
+[0;32mI (92003) MQTT: MQTT Data Published[0m
+[0;32mI (92703) Soil Moisture: Sensor 1 moisture: 100%[0m
+[0;32mI (92703) Soil Moisture: Sensor 2 moisture: 100%[0m
+[0;32mI (92703) Soil Moisture: Sensor 3 moisture: 100%[0m
+[0;32mI (92703) Soil Moisture: Sensor 4 moisture: 100%[0m
+[0;32mI (92703) Soil Moisture: Average moisture: 100%[0m

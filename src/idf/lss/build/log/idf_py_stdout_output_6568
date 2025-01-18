@@ -1,0 +1,18 @@
+Command: ninja all
+[1/9] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\1013\lss\src\idf\lss\build\bootloader\esp-idf\esptool_py && C:\Users\1013\.espressif\python_env\idf5.5_py3.10_env\Scripts\python.exe C:/Users/1013/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 C:/Users/1013/lss/src/idf/lss/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6600 bytes. 0xa00 bytes (9%) free.
+[2/9] No install step for 'bootloader'
+[3/9] Completed 'bootloader'
+[4/9] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/lss.c.obj
+[5/9] Linking C static library esp-idf\main\libmain.a
+[6/9] Generating ld/sections.ld
+[7/9] Linking CXX executable lss.elf
+[8/9] Generating binary image from built executable
+esptool.py v4.9.dev4
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated C:/Users/1013/lss/src/idf/lss/build/lss.bin
+[9/9] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\1013\lss\src\idf\lss\build\esp-idf\esptool_py && C:\Users\1013\.espressif\python_env\idf5.5_py3.10_env\Scripts\python.exe C:/Users/1013/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Users/1013/lss/src/idf/lss/build/partition_table/partition-table.bin C:/Users/1013/lss/src/idf/lss/build/lss.bin"
+lss.bin binary size 0xd85d0 bytes. Smallest app partition is 0x100000 bytes. 0x27a30 bytes (15%) free.

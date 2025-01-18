@@ -1,0 +1,129 @@
+Command: C:\Users\1013\.espressif\python_env\idf5.5_py3.10_env\Scripts\python.exe C:\Users\1013\esp-idf\tools/idf_monitor.py -p COM7 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 C:\Users\1013\lss\src\idf\lss\build\lss.elf C:\Users\1013\lss\src\idf\lss\build\bootloader\bootloader.elf --force-color -m 'C:\Users\1013\.espressif\python_env\idf5.5_py3.10_env\Scripts\python.exe' 'C:\Users\1013\esp-idf\tools\idf.py'
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM7 instead...[0m
+[0;33m--- esp-idf-monitor 1.5.0 on \\.\COM7 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at C:/Users/1013/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at C:/Users/1013/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d8acd: mqtt_app_start at C:/Users/1013/lss/src/idf/lss/main/lss.c:138 (discriminator 1)
+[0m
+[0;33m--- 0x4008975f: _esp_error_check_failed at C:/Users/1013/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40081a21: panic_abort at C:/Users/1013/esp-idf/components/esp_system/panic.c:454
+0x40089769: esp_system_abort at C:/Users/1013/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40091419: abort at C:/Users/1013/esp-idf/components/newlib/src/abort.c:38
+0x4008975f: _esp_error_check_failed at C:/Users/1013/esp-idf/components/esp_system/esp_err.c:49
+0x400d8acd: mqtt_app_start at C:/Users/1013/lss/src/idf/lss/main/lss.c:138 (discriminator 1)
+0x400d8ddd: app_main at C:/Users/1013/lss/src/idf/lss/main/lss.c:225
+0x4016c5dc: main_task at C:/Users/1013/esp-idf/components/freertos/app_startup.c:208
+0x4008a20d: vPortTaskWrapper at C:/Users/1013/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at C:/Users/1013/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at C:/Users/1013/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d8acd: mqtt_app_start at C:/Users/1013/lss/src/idf/lss/main/lss.c:138 (discriminator 1)
+[0m
+[0;33m--- 0x4008975f: _esp_error_check_failed at C:/Users/1013/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40081a21: panic_abort at C:/Users/1013/esp-idf/components/esp_system/panic.c:454
+0x40089769: esp_system_abort at C:/Users/1013/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40091419: abort at C:/Users/1013/esp-idf/components/newlib/src/abort.c:38
+0x4008975f: _esp_error_check_failed at C:/Users/1013/esp-idf/components/esp_system/esp_err.c:49
+0x400d8acd: mqtt_app_start at C:/Users/1013/lss/src/idf/lss/main/lss.c:138 (discriminator 1)
+0x400d8ddd: app_main at C:/Users/1013/lss/src/idf/lss/main/lss.c:225
+0x4016c5dc: main_task at C:/Users/1013/esp-idf/components/freertos/app_startup.c:208
+0x4008a20d: vPortTaskWrapper at C:/Users/1013/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at C:/Users/1013/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at C:/Users/1013/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d8acd: mqtt_app_start at C:/Users/1013/lss/src/idf/lss/main/lss.c:138 (discriminator 1)
+[0m
+[0;33m--- 0x4008975f: _esp_error_check_failed at C:/Users/1013/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40081a21: panic_abort at C:/Users/1013/esp-idf/components/esp_system/panic.c:454
+0x40089769: esp_system_abort at C:/Users/1013/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40091419: abort at C:/Users/1013/esp-idf/components/newlib/src/abort.c:38
+0x4008975f: _esp_error_check_failed at C:/Users/1013/esp-idf/components/esp_system/esp_err.c:49
+0x400d8acd: mqtt_app_start at C:/Users/1013/lss/src/idf/lss/main/lss.c:138 (discriminator 1)
+0x400d8ddd: app_main at C:/Users/1013/lss/src/idf/lss/main/lss.c:225
+0x4016c5dc: main_task at C:/Users/1013/esp-idf/components/freertos/app_startup.c:208
+0x4008a20d: vPortTaskWrapper at C:/Users/1013/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at C:/Users/1013/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at C:/Users/1013/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d8acd: mqtt_app_start at C:/Users/1013/lss/src/idf/lss/main/lss.c:138 (discriminator 1)
+[0m
+[0;33m--- 0x4008975f: _esp_error_check_failed at C:/Users/1013/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40081a21: panic_abort at C:/Users/1013/esp-idf/components/esp_system/panic.c:454
+0x40089769: esp_system_abort at C:/Users/1013/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40091419: abort at C:/Users/1013/esp-idf/components/newlib/src/abort.c:38
+0x4008975f: _esp_error_check_failed at C:/Users/1013/esp-idf/components/esp_system/esp_err.c:49
+0x400d8acd: mqtt_app_start at C:/Users/1013/lss/src/idf/lss/main/lss.c:138 (discriminator 1)
+0x400d8ddd: app_main at C:/Users/1013/lss/src/idf/lss/main/lss.c:225
+0x4016c5dc: main_task at C:/Users/1013/esp-idf/components/freertos/app_startup.c:208
+0x4008a20d: vPortTaskWrapper at C:/Users/1013/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at C:/Users/1013/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at C:/Users/1013/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d8acd: mqtt_app_start at C:/Users/1013/lss/src/idf/lss/main/lss.c:138 (discriminator 1)
+[0m
+[0;33m--- 0x4008975f: _esp_error_check_failed at C:/Users/1013/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40081a21: panic_abort at C:/Users/1013/esp-idf/components/esp_system/panic.c:454
+0x40089769: esp_system_abort at C:/Users/1013/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40091419: abort at C:/Users/1013/esp-idf/components/newlib/src/abort.c:38
+0x4008975f: _esp_error_check_failed at C:/Users/1013/esp-idf/components/esp_system/esp_err.c:49
+0x400d8acd: mqtt_app_start at C:/Users/1013/lss/src/idf/lss/main/lss.c:138 (discriminator 1)
+0x400d8ddd: app_main at C:/Users/1013/lss/src/idf/lss/main/lss.c:225
+0x4016c5dc: main_task at C:/Users/1013/esp-idf/components/freertos/app_startup.c:208
+0x4008a20d: vPortTaskWrapper at C:/Users/1013/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at C:/Users/1013/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at C:/Users/1013/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d8acd: mqtt_app_start at C:/Users/1013/lss/src/idf/lss/main/lss.c:138 (discriminator 1)
+[0m
+[0;33m--- 0x4008975f: _esp_error_check_failed at C:/Users/1013/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40081a21: panic_abort at C:/Users/1013/esp-idf/components/esp_system/panic.c:454
+0x40089769: esp_system_abort at C:/Users/1013/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40091419: abort at C:/Users/1013/esp-idf/components/newlib/src/abort.c:38
+0x4008975f: _esp_error_check_failed at C:/Users/1013/esp-idf/components/esp_system/esp_err.c:49
+0x400d8acd: mqtt_app_start at C:/Users/1013/lss/src/idf/lss/main/lss.c:138 (discriminator 1)
+0x400d8ddd: app_main at C:/Users/1013/lss/src/idf/lss/main/lss.c:225
+0x4016c5dc: main_task at C:/Users/1013/esp-idf/components/freertos/app_startup.c:208
+0x4008a20d: vPortTaskWrapper at C:/Users/1013/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at C:/Users/1013/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at C:/Users/1013/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x400d8acd: mqtt_app_start at C:/Users/1013/lss/src/idf/lss/main/lss.c:138 (discriminator 1)
+[0m
+[0;33m--- 0x4008975f: _esp_error_check_failed at C:/Users/1013/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40081a21: panic_abort at C:/Users/1013/esp-idf/components/esp_system/panic.c:454
+0x40089769: esp_system_abort at C:/Users/1013/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40091419: abort at C:/Users/1013/esp-idf/components/newlib/src/abort.c:38
+0x4008975f: _esp_error_check_failed at C:/Users/1013/esp-idf/components/esp_system/esp_err.c:49
+0x400d8acd: mqtt_app_start at C:/Users/1013/lss/src/idf/lss/main/lss.c:138 (discriminator 1)
+0x400d8ddd: app_main at C:/Users/1013/lss/src/idf/lss/main/lss.c:225
+0x4016c5dc: main_task at C:/Users/1013/esp-idf/components/freertos/app_startup.c:208
+0x4008a20d: vPortTaskWrapper at C:/Users/1013/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at C:/Users/1013/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at C:/Users/1013/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0m
