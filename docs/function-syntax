@@ -1,0 +1,10 @@
+xTaskCreate(
+                     vTaskCode,       // Function that implements the task.
+		     "NAME",          // Text name for the task.
+                     STACK_SIZE,      // Stack size in bytes.
+                     ( void * ) 1,    // Parameter passed into the task.
+                     tskIDLE_PRIORITY,// Priority at which the task is created.
+                     &xTaskBuffer );
+
+
+adc_oneshot_read(adc_oneshot_unit_handle_t handle, adc_channel_t chan, int *out_raw)
