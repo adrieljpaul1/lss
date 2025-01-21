@@ -1,45 +1,77 @@
 #include <stdio.h>
+
 #include "esp_adc/adc_oneshot.h"
+
 #include "hal/adc_types.h"
+
 #include "esp_log.h"
+
 #include "freertos/FreeRTOS.h"
+
 #include "freertos/task.h"
+
 #include "driver/gpio.h"
+
 #include "esp_wifi.h"
+
 #include "esp_event.h"
+
 #include "nvs_flash.h"
+
 #include "esp_netif.h"
+
 #include "esp_wifi_types.h"
+
 #include "mqtt_client.h"
 
 // Pin and threshold configurations
 #define D4 4  // GPIO pin for relay control
+
 #define MOISTURE_HIGH_THRESHOLD 25  // Turn motor off above this percentage
+
 #define MOISTURE_LOW_THRESHOLD 20   // Turn motor on below this percentage
+
 #define MQTT_RECONNECT_TIMEOUT_MS 10000
+
 #define WIFI_RETRY_DELAY_MS 5000
+
 #define ADC_READING_DELAY_MS 1000
+
 #define WIFI_MAXIMUM_RETRY 5
 
+
 // Global variables
+
 int values[4];  // Array to store ADC readings
+
 int average = 0;  // Average moisture value
+
 static bool motor_running = false;  // Track motor state for hysteresis
+
 static int s_retry_num = 0;  // WiFi retry counter
 
 // Logging tags
 static const char* TAGS = "Soil Moisture";
+
 static const char* TAGW = "Warning";
+
 static const char* TAGw = "WiFi System";
+
 static const char* TAGm = "MQTT";
 
+
 // MQTT client handle
+
 static esp_mqtt_client_handle_t client = NULL;
+
 static bool mqtt_connected = false;  
 
 // WiFi credentials - consider moving to menuconfig
-#define WIFI_SSID "Main Server"
-#define WIFI_PASS "admin@123"
+
+#define WIFI_SSID "realme"
+
+#define WIFI_PASS "ilakkiya"
+
 #define MQTT_BROKER_URL "mqtt://5.196.78.28:1883"
 
 // Convert ADC readings to moisture percentage
@@ -261,13 +293,12 @@ void app_main(void) {
         if (mqtt_connected) {
             char message[100];
             snprintf(message, sizeof(message),
-                    "{\"moisture\":[%d,%d,%d,%d],\"motor\":%d}",
-                    values[0], values[1], values[2], values[3], !(motor_running));
+                    "{\"moisture\":[%d,%d,%d,%d]}",
+                    values[0], values[1], values[2], values[3]);
             esp_mqtt_client_publish(client, "sector4", message, 0, 1, 2);
         }
         
         // Control motor with hysteresis
-        printf("%d\n",average);
         if (average < MOISTURE_LOW_THRESHOLD && !motor_running) {
             gpio_set_level(D4, 1);  // Turn on motor
             motor_running = true;
