@@ -1,27 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="styles.css"> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moisture Values</title>
+    <title>Sector Sensors Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Moisture Values</h1>    
-    <div>
-        <p>Value of a: <span id="1Value"></span></p>
-        <p>Value of b: <span id="2Value"></span></p>
-        <p>Value of c: <span id="3Value"></span></p>
-        <p>Value of d: <span id="4Value"></span></p>
-    </div>
-
-        <div id="progress-container">
-        <div id="progress-bar0">0%</div>
-    </div>
-    <br>
+    <header>
+        <h1>Sector Sensors Dashboard</h1>
+    </header>
+    <main>
+        <div id="sensor-container" class="sensor-container">
+            <!-- Sensor elements will be dynamically inserted here -->
+        </div>
+    </main>
+    <footer>
+        <p>Powered by WebSocket and MQTT</p>
+    </footer>
     <script src="script1.js"></script>
-    
-
-    
 </body>
 </html>

@@ -1,112 +1,101 @@
-/* Gruvbox Dark Color Scheme by Morhetz */
+/* Gruvbox-Themed Styles */
 
-/* General */
 :root {
-    --bg-color: #282828;
-    --fg-color: #ebdbb2;
-    --highlight-bg: #3c3836;
-    --highlight-fg: #b8bb26;
-    --selection-bg: #7c6f64;
-    --border-color: #928374;
-    --link-color: #8ec07c;
-    --error-color: #fb4934;
-    --warning-color: #fe8019;
+    --bg-dark: #282828;
+    --bg-light: #3c3836;
+    --fg-light: #ebdbb2;
+    --fg-dark: #282828;
+    --accent-green: #b8bb26;
+    --accent-yellow: #fabd2f;
+    --accent-red: #fb4934;
+    --accent-blue: #83a598;
+    --progress-bg: #504945;
 }
 
-/* Body */
 body {
-    background-color: var(--bg-color);
-    color: var(--fg-color);
-    font-family: 'Courier New', Courier, monospace;
+    background-color: var(--bg-dark);
+    color: var(--fg-light);
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-/* Links */
-a {
-    color: var(--link-color);
-    text-decoration: none;
-}
-
-a:hover {
-    color: var(--highlight-fg);
-}
-
-/* Header */
-h1, h2, h3, h4, h5, h6 {
-    color: var(--fg-color);
-}
-
-/* Code Blocks */
-code, pre {
-    background-color: var(--highlight-bg);
-    color: var(--fg-color);
-    padding: 0.2em 0.4em;
-    border-radius: 3px;
-}
-
-/* Selection */
-::selection {
-    background-color: var(--selection-bg);
-    color: var(--fg-color);
-}
-
-/* Buttons */
-button {
-    background-color: var(--highlight-bg);
-    color: var(--fg-color);
-    border: 1px solid var(--border-color);
-    padding: 0.5em 1em;
-    border-radius: 5px;
-}
-
-button:hover {
-    background-color: var(--highlight-fg);
-    color: var(--bg-color);
-}
-
-/* Inputs */
-input, textarea {
-    background-color: var(--highlight-bg);
-    color: var(--fg-color);
-    border: 1px solid var(--border-color);
-    padding: 0.5em;
-    border-radius: 5px;
-}
-
-input:focus, textarea:focus {
-    outline: none;
-    border-color: var(--highlight-fg);
-}
-
-/* Alerts */
-.alert {
-    padding: 1em;
-    background-color: var(--highlight-bg);
-    color: var(--fg-color);
-    border-left: 5px solid var(--highlight-fg);
-}
-
-.alert-error {
-    background-color: var(--error-color);
-    color: var(--bg-color);
-}
-
-.alert-warning {
-    background-color: var(--warning-color);
-    color: var(--bg-color);
-}
-#progress-container {
+header {
+    background-color: var(--bg-light);
     width: 100%;
-    background-color: #eee;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 2px solid var(--accent-yellow);
+}
+
+h1 {
+    margin: 0;
+    color: var(--accent-yellow);
+}
+
+main {
+    width: 90%;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.sensor-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sector {
+    background-color: var(--bg-light);
+    border: 2px solid var(--accent-blue);
+    border-radius: 8px;
+    padding: 15px;
+}
+
+h2 {
+    color: var(--accent-green);
+    margin-top: 0;
+}
+
+.sensor {
+    margin-bottom: 15px;
+}
+
+.sensor p {
+    margin: 5px 0;
+    color: var(--accent-blue);
+}
+
+.progress-bar-container {
+    background-color: var(--progress-bg);
     border-radius: 10px;
     overflow: hidden;
+    height: 25px;
 }
 
-#progress-bar {
-    height: 30px;
-    width: 0;
-    background-color: #4caf50;
+.progress-bar {
+    height: 100%;
+    background-color: var(--accent-green);
     text-align: center;
-    color: white;
-    line-height: 30px;
-    border-radius: 10px;
+    line-height: 25px;
+    color: var(--fg-dark);
+    width: 0%; /* This will be dynamically updated */
+    transition: width 0.5s ease-in-out;
+}
+
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: var(--bg-light);
+    width: 100%;
+    text-align: center;
+    color: var(--accent-yellow);
+    border-top: 2px solid var(--accent-yellow);
+}
+
+footer p {
+    margin: 0;
 }
