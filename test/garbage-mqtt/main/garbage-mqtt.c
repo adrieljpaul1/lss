@@ -47,9 +47,6 @@ static
 const char * TAGS = "Soil Moisture";
 
 static
-const char * TAGW = "Warning";
-
-static
 const char * TAGw = "WiFi System";
 
 static
@@ -69,27 +66,11 @@ static bool mqtt_connected = false;
 
 #define MQTT_BROKER_URL "mqtt://5.196.78.28:1883"
 
-// Convert ADC readings to moisture percentage
-void convert_to_percent(int value[]) {
-  average = 0;
-  for (int i = 0; i < 4; i++) {
-    // Bound checking for ADC values
-    if (value[i] > 4095) value[i] = 4095;
-    if (value[i] < 0) value[i] = 0;
-
-    // Convert to percentage (inverted as sensor reads high when dry)
-    value[i] = (int)((float) - (value[i] - 4095.0) / 4095.0 f * 100.0 f);
-    average += value[i];
-  }
-  average /= 4;
-}
-
 // Log sensor values
 void log_value() {
   for (int i = 0; i < 4; i++) {
-    ESP_LOGI(TAGS, "Sensor %d moisture: %d%%", i + 1, values[i]);
+    ESP_LOGI(TAGS, "values: %d",values[i]);
   }
-  ESP_LOGI(TAGS, "Average moisture: %d%%", average);
 }
 
 // WiFi event handler
@@ -238,19 +219,20 @@ void app_main(void) {
   // Initialize WiFi and MQTT
   wifi_init_sta();
   mqtt_app_start();
-
+  log_value();
   // Main loop
   while (1) {
-  	for(int i = 0;i<4;i++){
+    if (mqtt_connected) {
+    	for(int i = 0;i<4;i++){
   		values[i] = (int)(esp_random() % 100 +1);
   	}
-
-    if (mqtt_connected) {
       char message[100];
       snprintf(message, sizeof(message),
         "{\"moisture\":[%d,%d,%d,%d]}",
         values[0], values[1], values[2], values[3]);
       esp_mqtt_client_publish(client, "test/topic", message, 0, 1, 2);
+      ESP_LOGI(TAGm,"{\"moisture\":[%d,%d,%d,%d]}",
+        values[0], values[1], values[2], values[3]);
     }
     vTaskDelay(pdMS_TO_TICKS(ADC_READING_DELAY_MS));
   }
