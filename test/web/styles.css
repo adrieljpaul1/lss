@@ -1,0 +1,112 @@
+/* Gruvbox Dark Color Scheme by Morhetz */
+
+/* General */
+:root {
+    --bg-color: #282828;
+    --fg-color: #ebdbb2;
+    --highlight-bg: #3c3836;
+    --highlight-fg: #b8bb26;
+    --selection-bg: #7c6f64;
+    --border-color: #928374;
+    --link-color: #8ec07c;
+    --error-color: #fb4934;
+    --warning-color: #fe8019;
+}
+
+/* Body */
+body {
+    background-color: var(--bg-color);
+    color: var(--fg-color);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Links */
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--highlight-fg);
+}
+
+/* Header */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--fg-color);
+}
+
+/* Code Blocks */
+code, pre {
+    background-color: var(--highlight-bg);
+    color: var(--fg-color);
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+}
+
+/* Selection */
+::selection {
+    background-color: var(--selection-bg);
+    color: var(--fg-color);
+}
+
+/* Buttons */
+button {
+    background-color: var(--highlight-bg);
+    color: var(--fg-color);
+    border: 1px solid var(--border-color);
+    padding: 0.5em 1em;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: var(--highlight-fg);
+    color: var(--bg-color);
+}
+
+/* Inputs */
+input, textarea {
+    background-color: var(--highlight-bg);
+    color: var(--fg-color);
+    border: 1px solid var(--border-color);
+    padding: 0.5em;
+    border-radius: 5px;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: var(--highlight-fg);
+}
+
+/* Alerts */
+.alert {
+    padding: 1em;
+    background-color: var(--highlight-bg);
+    color: var(--fg-color);
+    border-left: 5px solid var(--highlight-fg);
+}
+
+.alert-error {
+    background-color: var(--error-color);
+    color: var(--bg-color);
+}
+
+.alert-warning {
+    background-color: var(--warning-color);
+    color: var(--bg-color);
+}
+#progress-container {
+    width: 100%;
+    background-color: #eee;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#progress-bar {
+    height: 30px;
+    width: 0;
+    background-color: #4caf50;
+    text-align: center;
+    color: white;
+    line-height: 30px;
+    border-radius: 10px;
+}
