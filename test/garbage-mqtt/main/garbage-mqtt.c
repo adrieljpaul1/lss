@@ -34,7 +34,7 @@
 
 #define ADC_READING_DELAY_MS 1000
 
-#define WIFI_MAXIMUM_RETRY 5
+#define WIFI_MAXIMUM_RETRY 1000
 
 // Global variables
 
@@ -60,9 +60,9 @@ static bool mqtt_connected = false;
 
 // WiFi credentials - consider moving to menuconfig
 
-#define WIFI_SSID "realme"
+#define WIFI_SSID "DBSX 2nd floor"
 
-#define WIFI_PASS "ilakkiya"
+#define WIFI_PASS "admin@123"
 
 #define MQTT_BROKER_URL "mqtt://5.196.78.28:1883"
 
