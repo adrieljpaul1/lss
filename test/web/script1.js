@@ -1,3 +1,4 @@
+
 //global variables
 let topics = [];
 //assign values to topics
@@ -8,7 +9,14 @@ for(let i = 1;i<=7;i++){
         topics.push(debian);
     }
 }
-
+function isJsonString(str) {
+    try {
+        JSON.parse(str);
+    } catch (e) {
+        return false;
+    }
+    return true;
+}
 
 
 // Connect to WebSocket server
@@ -19,7 +27,14 @@ ws.onopen = () => {
 };  
 
 ws.onmessage = (event) => {
-    const data = JSON.parse(event.data);
+    if(isJsonString(event.data)){
+        data = JSON.parse(event.data);
+    }
+    else{
+        console.error('Invalid JSON: ', event.data);
+    }
+    // const data = JSON.parse(event.data);
+    // console.log(data);
 
     // Update the displayed values when the WebSocket message is received
     //document.getElementById('aValue').textContent = data.a;
