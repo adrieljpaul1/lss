@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/mqtt/dist/mqtt.min.js"></script>
+
+
+    <title>LSS</title>
+    <link rel="icon" href="download_mustang_black_logo_transparent_png_4561.png">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body bgcolor="black">
+
+      <!-- Header -->
+      <div class="header" id="head">
+        <center><h1>LSS</h1>
+        </center>
+        <hr class="line">
+    </div>
+
+  <div id="button" class="button-container">
+    <button onclick="location.href='#sector1'" class="button">Sector 1</button>
+    <button onclick="location.href='#sector2'" class="button">Sector 2</button>
+    <button onclick="location.href='#sector3'" class="button">Sector 3</button>
+    <button onclick="location.href='#sector4'" class="button">Sector 4</button>
+    <button onclick="location.href='#sector5'" class="button">Sector 5</button>
+    <button onclick="location.href='#sector6'" class="button">Sector 6</button>
+    <button onclick="location.href='#sector7'" class="button">Sector 7</button>
+  </div>
+
+
+  <!-- Sector 1-->
+  <div id="sector1" class="sector-container"  style="margin-top: 700px; padding: 20px;">
+
+
+    <main>
+        <!-- Sector 1 -->
+        <div class="sector">
+            <h2>Sector 1</h2>
+            <div class="progress-container">
+                <div class="progress-bar">
+                    <span class="progress-label">Sensor 1</span>
+                    <div class="progress">
+                        <div class="progress-fill" id="sector-sensor1"></div>
+                    </div>
+                </div>
+                <div class="progress-bar">
+                    <span class="progress-label">Sensor 2</span>
+                    <div class="progress">
+                        <div class="progress-fill" id="sector1-sensor2"></div>
+                    </div>
+                </div>
+                <div class="progress-bar">
+                    <span class="progress-label">Sensor 3</span>
+                    <div class="progress">
+                        <div class="progress-fill" id="sector1-sensor3"></div>
+                    </div>
+                </div>
+                <div class="progress-bar">
+                    <span class="progress-label">Sensor 4</span>
+                    <div class="progress">
+                        <div class="progress-fill" id="sector1-sensor4"></div>
+                    </div>
+                </div>
+                <div class="progress-bar">
+                    <span class="progress-label" id="sector1-avg-label">Average</span>
+                    <div class="progress">
+                        <div class="progress-fill" id="sector1-avg"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="toggle-container">
+                <label for="toggle1">Activate Motor</label>
+                <div id="toggle1" class="toggle-switch" onclick="toggleState(1)">
+                    <div class="toggle-circle"></div>
+                </div>
+            </div>
+            <div class="button-container">
+                <button onclick="location.href='#head'" class="button2">Return to home page</button></div></center>
+          </div>
+        </div>
+    
+    </main>
+
+
+</div>
+
+    <!-- Sector 2-->
+    <div id="sector2" class="sector-container"  style="margin-top: 1400px; padding: 20px;">
+
+  
+        <main>
+            <!-- Sector 2 -->
+            <div class="sector">
+                <h2>Sector 2</h2>
+                <div class="progress-container">
+                    <div class="progress-bar">
+                        <span class="progress-label">Sensor 1</span>
+                        <div class="progress">
+                            <div class="progress-fill" id="sector2-sensor1"></div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <span class="progress-label">Sensor 2</span>
+                        <div class="progress">
+                            <div class="progress-fill" id="sector2-sensor2"></div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <span class="progress-label">Sensor 3</span>
+                        <div class="progress">
+                            <div class="progress-fill" id="sector2-sensor3"></div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <span class="progress-label">Sensor 4</span>
+                        <div class="progress">
+                            <div class="progress-fill" id="sector2-sensor4"></div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <span class="progress-label" id="sector2-avg-label">Average</span>
+                        <div class="progress">
+                            <div class="progress-fill" id="sector2-avg"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="toggle-container">
+                    <label for="toggle2">Activate Motor</label>
+                    <div id="toggle2" class="toggle-switch" onclick="toggleState(2)">
+                        <div class="toggle-circle"></div>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button onclick="location.href='#head'" class="button2">Return to home page</button></div></center>
+              </div>
+            </div>
+            
+        </main>
+
+  
+    </div>
+    
+    <!-- Sector 3-->
+    <div id="sector3" class="sector-container"  style="margin-top: 2100px; padding: 20px;">
+
+  
+        <main>
+            <!-- Sector 3 -->
+            <div class="sector">
+                <h2>Sector 3</h2>
+                <div class="progress-container">
+                    <div class="progress-bar">
+                        <span class="progress-label">Sensor 1</span>
+                        <div class="progress">
+                            <div class="progress-fill" id="sector3-sensor1"></div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <span class="progress-label">Sensor 2</span>
+                        <div class="progress">
+                            <div class="progress-fill" id="sector3-sensor2"></div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <span class="progress-label">Sensor 3</span>
+                        <div class="progress">
+                            <div class="progress-fill" id="sector3-sensor3"></div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <span class="progress-label">Sensor 4</span>
+                        <div class="progress">
+                            <div class="progress-fill" id="sector3-sensor4"></div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <span class="progress-label" id="sector3-avg-label">Average</span>
+                        <div class="progress">
+                            <div class="progress-fill" id="sector3-avg"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="toggle-container">
+                    <label for="toggle3">Activate Motor</label>
+                    <div id="toggle3" class="toggle-switch" onclick="toggleState(3)">
+                        <div class="toggle-circle"></div>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button onclick="location.href='#head'" class="button2">Return to home page</button></div></center>
+              </div>
+            </div>
+                    </main>
+
+
+  
+    </div>
+
+    <!-- Sector 4-->
+    <div id="sector4" class="sector-container"  style="margin-top: 2100px; padding: 20px;">
+
+  
+        <main>
+            <!-- Sector 4 -->
+            <div class="sector">
+                <h2>Sector 4</h2>
+                <div class="progress-container">
+                    <div class="progress-bar">
+                        <span class="progress-label">Sensor 1</span>
+                        <div class="progress">
+                            <div class="progress-fill" id="sector4-sensor1"></div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <span class="progress-label">Sensor 2</span>
+                        <div class="progress">
+                            <div class="progress-fill" id="sector4-sensor2"></div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <span class="progress-label">Sensor 3</span>
+                        <div class="progress">
+                            <div class="progress-fill" id="sector4-sensor3"></div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <span class="progress-label">Sensor 4</span>
+                        <div class="progress">
+                            <div class="progress-fill" id="sector4-sensor4"></div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <span class="progress-label" id="sector4-avg-label">Average</span>
+                        <div class="progress">
+                            <div class="progress-fill" id="sector4-avg"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="toggle-container">
+                    <label for="toggle4">Activate Motor</label>
+                    <div id="toggle4" class="toggle-switch" onclick="toggleState(4)">
+                        <div class="toggle-circle"></div>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button onclick="location.href='#head'" class="button2">Return to home page</button></div>
+              </div>
+            </div>
+        </main>
+
+      
+    </div>
+
+    <!-- Sector 5-->
+    <div id="sector5" class="sector-container"  style="margin-top: 2100px; padding: 20px;">
+
+  
+        <main>
+            <!-- Sector 5 -->
+            <div class="sector">
+                <h2>Sector 5</h2>
+                <div class="progress-container">
+                    <div class="progress-bar">
+                        <span class="progress-label">Sensor 1</span>
+                        <div class="progress">
+                            <div class="progress-fill" id="sector5-sensor1"></div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <span class="progress-label">Sensor 2</span>
+                        <div class="progress">
+                            <div class="progress-fill" id="sector5-sensor2"></div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <span class="progress-label">Sensor 3</span>
+                        <div class="progress">
+                            <div class="progress-fill" id="sector5-sensor3"></div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <span class="progress-label">Sensor 4</span>
+                        <div class="progress">
+                            <div class="progress-fill" id="sector5-sensor4"></div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <span class="progress-label" id="sector5-avg-label">Average</span>
+                        <div class="progress">
+                            <div class="progress-fill" id="sector5-avg"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="toggle-container">
+                    <label for="toggle5">Activate Motor</label>
+                    <div id="toggle5" class="toggle-switch" onclick="toggleState(5)">
+                        <div class="toggle-circle"></div>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button onclick="location.href='#head'" class="button2">Return to home page</button></div></center>
+              </div>
+            </div>
+                    </main>
+
+
+  
+    </div>
+
+    <!-- Sector 6-->
+    <div id="sector6" class="sector-container"  style="margin-top: 2100px; padding: 20px;">
+
+  
+        <main>
+            <!-- Sector 6 -->
+            <div class="sector">
+                <h2>Sector 6</h2>
+                <div class="progress-container">
+                    <div class="progress-bar">
+                        <span class="progress-label">Sensor 1</span>
+                        <div class="progress">
+                            <div class="progress-fill" id="sector6-sensor1"></div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <span class="progress-label">Sensor 2</span>
+                        <div class="progress">
+                            <div class="progress-fill" id="sector6-sensor2"></div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <span class="progress-label">Sensor 3</span>
+                        <div class="progress">
+                            <div class="progress-fill" id="sector6-sensor3"></div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <span class="progress-label">Sensor 4</span>
+                        <div class="progress">
+                            <div class="progress-fill" id="sector6-sensor4"></div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <span class="progress-label" id="sector6-avg-label">Average</span>
+                        <div class="progress">
+                            <div class="progress-fill" id="sector6-avg"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="toggle-container">
+                    <label for="toggle6">Activate Motor</label>
+                    <div id="toggle6" class="toggle-switch" onclick="toggleState(6)">
+                        <div class="toggle-circle"></div>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button onclick="location.href='#head'" class="button2">Return to home page</button></div></center>
+              </div>
+            </div>
+                    </main>
+
+
+  
+    </div>
+
+
+<!-- Sector 7-->
+<div id="sector7" class="sector-container"  style="margin-top: 2100px; padding: 20px;">
+
+  
+    <main>
+        <!-- Sector 7 -->
+        <div class="sector">
+            <h2>Sector 7</h2>
+            <div class="progress-container">
+                <div class="progress-bar">
+                    <span class="progress-label">Sensor 1</span>
+                    <div class="progress">
+                        <div class="progress-fill" id="sector7-sensor1"></div>
+                    </div>
+                </div>
+                <div class="progress-bar">
+                    <span class="progress-label">Sensor 2</span>
+                    <div class="progress">
+                        <div class="progress-fill" id="sector7-sensor2"></div>
+                    </div>
+                </div>
+                <div class="progress-bar">
+                    <span class="progress-label">Sensor 3</span>
+                    <div class="progress">
+                        <div class="progress-fill" id="sector7-sensor3"></div>
+                    </div>
+                </div>
+                <div class="progress-bar">
+                    <span class="progress-label">Sensor 4</span>
+                    <div class="progress">
+                        <div class="progress-fill" id="sector7-sensor4"></div>
+                    </div>
+                </div>
+                <div class="progress-bar">
+                    <span class="progress-label" id="sector7-avg-label">Average</span>
+                    <div class="progress">
+                        <div class="progress-fill" id="sector7-avg"></div>
+                    </div>
+                </div>>
+            </div>
+            <div class="toggle-container">
+                <label for="toggle7">Activate Motor</label>
+                <div id="toggle7" class="toggle-switch" onclick="toggleState(7)">
+                    <div class="toggle-circle"></div>
+                </div>
+            </div>
+            <div class="button-container">
+                <button onclick="location.href='#head'" class="button2">Return to home page</button></div></center>
+          </div>
+        </div>
+            </main>
+
+
+
+</div>
+</body>
+
+</html> 
+
+<hr class="line">
+
+<!-- Footer -->
+   <center> <footer>
+        <p>&copy; CPP Bros</p>
+    </footer></center>
