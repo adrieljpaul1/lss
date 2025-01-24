@@ -1,7 +1,7 @@
 const mqtt = require('mqtt');
 
 // Connect to the MQTT broker (replace with your broker's IP if needed)
-const client = mqtt.connect('mqtt://172.20.150.140');  // Use your broker's IP
+const client = mqtt.connect('mqtt://5.196.78.28');  // Use your broker's IP
 
 // Define the topics (sector1 to sector7)
 const topics = [];
