@@ -1,0 +1,13 @@
+## Pins that do not interfere with WiFi/MQTT tasks
+
+1 -- ADC1_CHANNEL_0 (GPIO 36) - VP - GPIO 36
+2 -- ADC1_CHANNEL_3 (GPIO 39) - VN - GPIO 39
+3 -- ADC1_CHANNEL_6 (GPIO 34) - D34 - GPIO 34
+4 -- ADC1_CHANNEL_7 (GPIO 35) - D35 - GPIO 35
+5 -- D4 = GPIO 4 -- Motor control
+
+
+adc1_get_raw(channel); gives you raw value- for moisture sensor, it gives 4095 as driest and 0 as wettest.
+
+***CHECK FOR ANY SYNTAX ERRORS BEFORE BUILDING***
+

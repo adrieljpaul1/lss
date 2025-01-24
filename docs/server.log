@@ -1,0 +1,90 @@
+https://tabs.ultimate-guitar.com/tab/misc-soundtrack/kadhalikka-neramillai-yennai-izhukkuthadi-chords-5618709 transpose +4
+
+Rockpi (if we have ~5k and some more to spare)
+
+https://radxa.com/products/rock4/4a/
+
+Raspi (Cost efficient)
+Raspberry Pi = https://www.raspberrypi.com/products/raspberry-pi-zero-2-w/	
+
+Documents:
+Getting started : https://www.raspberrypi.com/documentation/computers/getting-started.html
+RaspberrryPi Zero 2W Product info brief = https://datasheets.raspberrypi.com/rpizero2/raspberry-pi-zero-2-w-product-brief.pdf
+YouTube video = https://datasheets.raspberrypi.com/rpizero2/raspberry-pi-zero-2-w-product-brief.pdf
+
+
+
+//approved resellers
+Robocraze = https://robocraze.com/products/raspberry-pi-zero-2-w?src=raspberrypi
+Robu = https://robu.in/product/raspberry-pi-zero-2-w/ //out of stock
+
+
+//Accessories
+1. Heat sink
+https://robocraze.com/products/aluminum-heatsink-for-raspberry-pi-zero-2w	
+
+2. Mini HDMi to HDMi
+https://www.thingbits.in/products/mini-hdmi-to-hdmi-cable-3-feet?src=raspberrypi
+https://robu.in/product/mini-hdmi-hdmi-cable-1-8-meter-round-high-quality-copper-clad-steel-black/
+
+3. Adapter- Mini HDMi to HDMi (Alternative to No. 2)
+https://robu.in/product/hdmi-female-to-mini-hdmi-male-adapter/
+
+4. HDMi Cable
+Available in school
+
+Youtube :
+https://www.youtube.com/watch?v=3eGP00uXcUU
+
+ChatGPT's advice:  //refer `https://chatgpt.com/share/67920118-4cfc-800b-b0b5-5cc129b9099a`
+Yeah, an SBC (Single Board Computer) is actually a great choice for your light-weight Node.js + MQTT setup. Given your project, which likely involves handling sensor data, managing MQTT messages, and perhaps a simple web interface, an SBC like the **Raspberry Pi Zero 2 W** or **Radxa Rock 4A** should work well.  
+
+### Why an SBC is a Good Choice for Your Project:
+1. **Low Power Consumption:**  
+   - Perfect for IoT-based systems that need to run continuously without high energy costs.  
+2. **Compact Size:**  
+   - Easy to integrate into your LSS project setup.  
+3. **Sufficient Performance:**  
+   - SBCs can easily handle MQTT message brokering and Node.js applications, especially for small to medium-scale projects.  
+4. **Built-in Wi-Fi (Pi Zero 2 W):**  
+   - Makes it easier to connect with your IoT devices without extra hardware.  
+5. **Linux Environment:**  
+   - Full-fledged OS support for running Node.js and setting up MQTT brokers like Mosquitto or EMQX.  
+
+### Which SBC to Choose?  
+**1. Raspberry Pi Zero 2 W** (Affordable, Compact, Easy Setup)  
+- Quad-core Cortex-A53  
+- 512MB RAM (might limit multitasking but enough for MQTT + light Node.js)  
+- Built-in Wi-Fi & Bluetooth  
+- Great community support  
+
+**2. Radxa Rock 4A** (More Power, Future Expansion)  
+- Rockchip RK3399 (Dual Cortex-A72 + Quad Cortex-A53)  
+- 4GB RAM (better multitasking)  
+- Faster I/O (eMMC, USB 3.0, etc.)  
+- More suited if you're planning to scale or add heavy processing later.  
+
+### Considerations:
+- If your use case is **just handling MQTT and basic Node.js**, the Pi Zero 2 W is a cost-effective, energy-efficient choice.  
+- If you foresee **future expansion** with dashboards, data logging, or heavier processing, the Radxa Rock 4A offers better headroom.  
+
+If you're on a budget and want something simple, **go for the Pi Zero 2 W.** If you want flexibility and power, **the Rock 4A is the better choice.**  
+
+Let me know if you need help with setup ideas!
+
+//all prices incl. GST
+**Other options**
+//Accessories 
+1. Fan Hat  //out of stock
+https://robu.in/product/argon-fan-hat-for-raspberry-pi-4-3b3-b-includes-40mm-fan/
+
+2. 
+
+1. Raspberry Pi 3 Model B+ (3,598.00)
+Link : https://robu.in/product/raspberry-pi-3-model-b-bcm2837b0-soc-iot-poe-enabled/?src=raspberrypi
+
+2. Raspberry Pi 3 Model B+ Starter Kit (4,888.00)
+Link : https://robu.in/product/raspberry-pi-3-model-b-plus-starter-kit/
+
+3. Raspberry Pi 4 Model B 2GB Starter Kit (6,069.00)  //out of stock
+Link : https://robu.in/product/raspberry-pi-4-model-b-2gb-starter-kit/
