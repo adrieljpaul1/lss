@@ -27,7 +27,7 @@
 // Pin and threshold configurations
 #define D4 4  // GPIO pin for relay control
 
-#define MOISTURE_HIGH_THRESHOLD 25  // Turn motor off above this percentage
+#define MOISTURE_HIGH_THRESHOLD 40  // Turn motor off above this percentage
 
 #define MOISTURE_LOW_THRESHOLD 20   // Turn motor on below this percentage
 
