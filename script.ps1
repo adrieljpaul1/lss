@@ -1,3 +1,5 @@
+
+Write-host "in"  $PWD
 Write-host "adding files..."
 git add .
 Write-Host "Add success! refer above for messages from git!"
