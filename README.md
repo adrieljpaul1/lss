@@ -6,12 +6,13 @@
 
 **MQTT BROKER IP :** <code>5.196.78.28</code>  
 
-
+this is alice's first time in git!
 **RECOMMENDED ESP32 BAUDRATE :** <code>115200</code>   
 
 **MAXIMUM ESP32 BAUDRATE :** <code>921600</code>  
 
 ### Contributors:
+
 #### 1. Casendraa, **Alice** 
 1. **HR** Manager
 2. LOGISTICS
