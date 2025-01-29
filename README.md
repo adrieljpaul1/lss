@@ -54,4 +54,6 @@ this is alice's first time in git!
 <!--
 cuddles/iusearchbtw -- mongo
 root/iusearchbtw -- arch(root)
+cuddles/cuddles -- arch(cuddles)
+git branch -r | grep -v "main" | sed 's/origin\///' | xargs -I {} git push origin --delete {} (enter this command every 10 days, create bash script for it)
 -->
