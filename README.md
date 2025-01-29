@@ -16,7 +16,8 @@ this is alice's first time in git!
 #### 1. Casendraa, **Alice** 
 1. **HR** Manager
 2. LOGISTICS
-3. History Whiz
+3. **History Whiz**
+4. Git
 ##### Skillset :
 1. C
 2. Linux Basics
