@@ -2,7 +2,7 @@
 ### LSS Github.
     
 
-**LINK :**  <code><https://github.com/adrieljpaul1/test></code>  
+**LINK :**  <code><https://github.com/adrieljpaul1/lss></code>  
 
 **MQTT BROKER IP :** <code>5.196.78.28</code>  
 
