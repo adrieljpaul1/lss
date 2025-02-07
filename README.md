@@ -5,11 +5,10 @@
 **LINK :**  <code><https://github.com/adrieljpaul1/lss></code>  
 
 **MQTT BROKER IP :** <code>5.196.78.28</code>  
+<!--
+this is alice's first time in git!-->  
 
-this is alice's first time in git!
-**RECOMMENDED ESP32 BAUDRATE :** <code>115200</code>   
-
-**MAXIMUM ESP32 BAUDRATE :** <code>921600</code>  
+**ESP32 BAUDRATE :** <code>921600</code>  
 
 ### Contributors:
 
@@ -55,5 +54,11 @@ this is alice's first time in git!
 cuddles/iusearchbtw -- mongo
 root/iusearchbtw -- arch(root)
 cuddles/cuddles -- arch(cuddles)
+
+raspi--
+
+root/pranithjoshua
+
 git branch -r | grep -v "main" | sed 's/origin\///' | xargs -I {} git push origin --delete {} (enter this command every 10 days, create bash script for it)
--->
+
+-->
