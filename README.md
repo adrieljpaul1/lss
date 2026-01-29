@@ -1,12 +1,13 @@
 
 ### LSS Github.
-    
+LSS (Lawn Sprinkler System) is a distributed ESP32-based irrigation system that autonomously controls water valves based on soil moisture levels. Each node can be manually overridden or remotely controlled via MQTT, while default operation minimizes resource usage by avoiding Arduino abstractions and relying on low-level C and assembly for efficiency.    
 
 **LINK :**  <code><https://github.com/adrieljpaul1/lss></code>  
 
 **MQTT BROKER IP :** <code>5.196.78.28</code>  
 <!--
-this is alice's first time in git!-->  
+this is alice's first time in git!
+-->  
 
 **ESP32 BAUDRATE :** <code>921600</code>  
 
@@ -61,4 +62,6 @@ root/pranithjoshua
 
 git branch -r | grep -v "main" | sed 's/origin\///' | xargs -I {} git push origin --delete {} (enter this command every 10 days, create bash script for it)
 
--->
+
+-->
+
